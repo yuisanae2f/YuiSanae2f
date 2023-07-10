@@ -1,0 +1,45 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.comment{
+    color:rgb(102, 129, 53);
+}
+
+.class{
+    color:turquoise;
+}
+
+.function{
+    color:yellow;
+}
+
+.reservedKey{
+    color:rgb(23, 143, 235);
+}
+
+.includeKey{
+    color:darkgray;
+}
+
+.str{
+    color:orange;
+}
+
+.logic{
+    color:rgb(174, 9, 174);
+}
+
+.param{
+    color:darkgray;
+}
