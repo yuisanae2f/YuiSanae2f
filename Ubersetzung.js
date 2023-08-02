@@ -23,7 +23,7 @@ function lever(langEnum, className, tagName = "div") {
     
     let i = 0;
     for(; i < _class.length; i++) {
-        _class[i].getElementsByTagName(tagName)[0].classList = i == langEnum ? ['checkOn'] : null;
+        _class[i].getElementsByTagName(tagName)[0].classList = i == langEnum ? ["checkOn"] : null;
     } return i;
 }
 
