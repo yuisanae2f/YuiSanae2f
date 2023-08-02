@@ -17,7 +17,7 @@ var ulArr = [
         <li><a href="./C/pointer.html" id="C::pointer">포인터</a></li>
         `,
         `
-        <li>#include</li>
+        <li><a href="./hLib/include.html">#include</a></li>
         <li><a href="./hLib/stdio.html">stdio.h</a></li>
         `
     ],
@@ -28,20 +28,20 @@ var ulArr = [
         `,
 
         `
-        <li>#include</li>
+        <li><a href="./hLib/include.html">#include</a></li>
         <li><a href="./hLib/iostream.html">iostream</a></li>
         `
     ]
 ];
 
 var cArr = [
-    ["", "", "주석", "자료형", "함수", "포인터", "", ""],
-    ["", "", "Comment", "Data Type", "Function", "Pointer", "", ""]
+    ["", "", "주석", "자료형", "함수", "포인터", "", "", "돌아가기"],
+    ["", "", "Comment", "Data Type", "Function", "Pointer","", "", "Return"]
 ];
 
 var cppArr = [
-    ["", "", ""],
-    ["", "", ""]
+    ["", "", "", "", "돌아가기"],
+    ["", "", "", "", "Return"]
 ];
 
 function flip(langEnum) {
