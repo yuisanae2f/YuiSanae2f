@@ -1,7 +1,7 @@
 var legendArr = 
 [
-    ["언어", "프로그래밍 언어"],
-    ["Languages", "Programming Language"]
+    ["언어", "튜토리얼"],
+    ["Languages", "Tutorial"]
 ];
 
 var h3Arr = [
