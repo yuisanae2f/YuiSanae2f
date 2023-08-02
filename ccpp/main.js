@@ -11,10 +11,10 @@ var ulArr = [
     [
         `
         <li><a href="./C/helloWorld.html" id="C::helloWorld">Hello World!</a></li>
-        <li><a href="./C/comment.html" id="C::comment">주석</a></li>
-        <li><a href="./C/dataType.html" id="C::dataType">자료형</a></li>
-        <li><a href="./C/function.html" id="C::function">함수</a></li>
-        <li><a href="./C/pointer.html" id="C::pointer">포인터</a></li>
+        <li><a href="./C/comment.html" id="C::comment"></a></li>
+        <li><a href="./C/dataType.html" id="C::dataType"></a></li>
+        <li><a href="./C/function.html" id="C::function"></a></li>
+        <li><a href="./C/pointer.html" id="C::pointer"></a></li>
         `,
         `
         <li><a href="./hLib/include.html">#include</a></li>
