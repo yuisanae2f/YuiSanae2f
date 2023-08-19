@@ -48,6 +48,10 @@ legend{
     color:#00ffff;
 }
 
+legend.code{
+    color:#ffffff
+}
+
 :root {
     --background-color: #161616;
     --color: #ffffff;

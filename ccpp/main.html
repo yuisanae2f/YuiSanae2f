@@ -1,35 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>C/C++ // by yuisanae2f</title>
+        <title>ccpp</title>
         <link rel="stylesheet" href="../global.css">
-        <script src="../Ubersetzung.js"></script>
-        <script src="./main.js"></script>
-        <style>
-            .cMark .checkOn{
-                transition: all 1s;
-                color:yellow;
-                background:none;
-            }
-        </style>
     </head>
+
     <body>
-        <h3>
-            <cpp class="cMark"><cpp value="0">C</cpp></cpp>/<cpp class="cMark"><cpp value="1">C++</cpp></cpp>
- <a href="./C/comment.html#single" class="comment">// by yuisanae2f</a>
-        </h3>
-        <fieldset id="ubersetzung"></fieldset><br>
-        <fieldset id="ccpp"></fieldset><br>
-        <fieldset>
-            <legend>기초 예제</legend>
-            <ul></ul>
+        <h2>yuisanae2f.ccpp</h2><hr>
+
+        <fieldset id="helloWorld">
+            <legend>Hello World!</legend>
+
+            <fieldset id="helloWorld.c">
+                <legend>C</legend>
+                <pre>
+#include <a href="./header/h/stdio.html" class="str">&lt;stdio.h&gt;</a>
+<a href="#dataType.int" class="reservedKey">int</a> <a href="#function.main" class="function">main</a>() {
+    <a href="./header/h/stdio.html" class="function">printf</a>(<a href="#string" class="str">"Hello World!"</a>);
+    return 0;
+}</pre>
+            </fieldset><br>
+
+            <fieldset id="helloWorld.cpp">
+                <legend>C++</legend>
+                <pre>
+#include &lt;iostream&gt;
+<a href="#dataType.int" class="reservedKey">int</a> <a href="#function.main" class="function">main</a>() {
+    <a href="./header/lib/iostream.html#std.cout">std::cout</a> &lt;&lt; <a href="#string" class="str">"Hello World!"</a>;
+    return 0;
+}</pre>
+            </fieldset>
         </fieldset><br>
 
-        <fieldset>
-            <legend> 헤더와 라이브러리 </legend>
-            <ul></ul>
+        <fieldset id="dataType">
+            <legend>자료형</legend>
+            <ul>
+                <li id="dataType.bool" class="reservedKey">bool</li>
+                <li id="dataType.int" class="reservedKey">int</li>
+                <li id="dataType.char" class="reservedKey">char</li>
+                <li id="dataType.float" class="reservedKey">float</li>
+                <li id="dataType.double" class="reservedKey">double</li>
+            </ul>
+
+            <fieldset id="dataType.[]">
+                <legend>배열</legend>
+            </fieldset><br>
+
+            <fieldset id="dataType.pointer">
+                <legend>포인터</legend>
+            </fieldset><br>
+
+            <fieldset id="dataType.typedef">
+                <legend class="reservedKey">typedef</legend>
+            </fieldset>
+        </fieldset><br>
+
+        <fieldset id="function">
+            <legend>함수</legend>
+            <fieldset id="function.main">
+                <legend class="code"><a href="#function" class="function">main</a>()</legend>
+            </fieldset><br>
+
+            <fieldset id="function.return">
+                <legend class="logic">return</legend>
+            </fieldset>
+        </fieldset><br>
+
+        <fieldset id="string">
+            <legend>문자열</legend>
         </fieldset>
-        <br><a href="../index.html">d</a>
     </body>
-    <script>display(); displayCCPP(); flipCCPP(0); flip(0);</script>
 </html>
