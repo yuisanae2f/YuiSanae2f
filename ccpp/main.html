@@ -1,101 +1,247 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ccpp</title>
-        <link rel="stylesheet" href="../global.css">
-    </head>
+<html lang="kr">
+<head>
+    <meta content="text/html; charset=UTF-8">
+    <title>C/C++</title>
+    <link rel="stylesheet" href="../global.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1><a href="../index.html#tutorial">tutorial</a>.ccpp</h1>
 
-    <body>
-        <h2><a href="../index.html">yuisanae2f</a>.ccpp</h2><hr>
-
-        <fieldset id="helloWorld">
-            <legend>Hello World!</legend>
-
-            <fieldset id="helloWorld.c">
-                <legend>C</legend>
-                <pre>
-#include <a href="./header/h/stdio.html" class="str">&lt;stdio.h&gt;</a>
+    <h2 id="helloWorld">Hello World!</h2>
+    <div class="indent box">
+        <pre></pre>
+        <h3 id="helloWorld.c">C</h3>
+        <div class="box">
+            <pre>
+<a href="#include" class="includeKey">#include</a> <a href="" class="str">&lt;stdio.h&gt;</a>
 <a href="#dataType.int" class="reservedKey">int</a> <a href="#function.main" class="function">main</a>() {
-    <a href="./header/h/stdio.html" class="function">printf</a>(<a href="#string" class="str">"Hello World!"</a>);
-    <a href="#function.return" class="logic">return</a> <mrk class="generic">0</mrk>;
+    <a href="" class="function">printf</a>(<a href="" class="str">"Hello World!"</a>);
+    <a href="#function.return" class="logic">return</a> 0;
 }</pre>
-            </fieldset><br>
+        </div>
 
-            <fieldset id="helloWorld.cpp">
-                <legend>C++</legend>
-                <pre>
-#include <a href="./header/lib/iostream.html">&lt;iostream&gt;</a>
+        <h3 id="helloWorld.cpp">C++</h3>
+        <div class="box">
+            <pre>
+<a href="#include" class="includeKey">#include</a> <a href="" class="str">&lt;iostream&gt;</a>
 <a href="#dataType.int" class="reservedKey">int</a> <a href="#function.main" class="function">main</a>() {
-    <a href="./header/lib/iostream.html#std.cout">std::cout</a> &lt;&lt; <a href="#string" class="str">"Hello World!"</a>;
-    <a href="#function.return" class="logic">return</a> <mrk class="generic">0</mrk>;
-}</pre>
-            </fieldset>
-        </fieldset><br>
+    std::cout << <a href="" class="str">"Hello World!"</a>;
+    <a href="#function.return" class="logic">return</a> 0;
+}
+            </pre>
+        </div>
+    </div>
 
-        <fieldset id="operator">
-            <legend>연산자</legend>
+    <h2 id="dataType">자료형</h2>
+    <div class="indent box">
+        <div class="box">자료의 형태를 미리 정의하는 방식입니다.</div>
 
-            <fieldset id="operator.fourFundamental">
-                <legend>사칙연산</legend>
-                <ul>
-                    <li id="operator.fourFundamental.+">+</li>
-                    <li id="operator.fourFundamental.-">-</li>
-                    <li id="operator.fourFundamental.*">*</li>
-                    <li id="operator.fourFundamental./">/</li>
-                </ul>
-            </fieldset><br>
+        <h3 id="dataType.integer">정수형</h3>
+        <div class="box">
+            <h3 id="dataType.bool" class="reservedKey">bool</h3>
+            <div class="box">
+                1bit의 크기를 가진 이진 정수를 뜻합니다.
+                <h4 id="dataType.bool.true" class="reservedKey">true</h4>
+                <div class="box">참값을 뜻하며, 1의 값을 가집니다.</div>
+    
+                <h4 id="dataType.bool.false" class="reservedKey">false</h4>
+                <div class="box">거짓값을 뜻하며, 0의 값을 가집니다.</div>
+            </div>
+    
+            <h3 id="dataType.char" class="reservedKey">char</h3>
+            <div class="box">1byte의 크기를 가진 정수를 아스키 형태의 문자로 표현한 것을 뜻합니다.</div>
+    
+            <h3 id="dataType.int" class="reservedKey">int</h3>
+            <div class="box">4byte의 크기를 가진 정수를 뜻합니다.</div>
+        </div>
 
-            <fieldset id="operator.pointer">
-                <legend><a href="#dataType.pointer">포인터</a> 연산</legend>
-                <ul>
-                    <li id="operator.pointer.*">*</li>
-                    <li id="operator.pointer.&">&</li>
-                    <li id="operator.pointer.[]">[]</li>
-                    <li id="operator.pointer.->">-></li>
-                </ul>
-            </fieldset>
-        </fieldset><br>
+        <h3>부동 소수형</h3>
+        <div class="box">
+            <h3 id="dataType.float" class="reservedKey">float</h3>
+            <div class="box">4byte의 크기를 가진 부동 소수점을 뜻합니다.</div>
 
-        <fieldset id="dataType">
-            <legend>자료형</legend>
-            <ul>
-                <li id="dataType.bool" class="reservedKey">bool</li>
-                <li id="dataType.int" class="reservedKey">int</li>
-                <li id="dataType.char" class="reservedKey">char</li>
-                <li id="dataType.float" class="reservedKey">float</li>
-                <li id="dataType.double" class="reservedKey">double</li>
-            </ul>
+            <h3 id="dataType.double" class="reservedKey">double</h3>
+            <div class="box">8byte의 크기를 가진 부동 소수점을 뜻합니다.</div>
+        </div>
+    </div>
 
-            <fieldset id="dataType.[]">
-                <legend>배열</legend>
-            </fieldset><br>
+    <h2 id="operator">연산자 모음</h2>
+    <div class="indent box">
+        <h3 id="operator.basic">사칙연산</h3>
+        <div class="box">
+            <h4 id="operator.basic.+">+</h4>
+            <div class="box">덧셈 연산을 수행합니다.</div>
+            <h4 id="operator.basic.-">-</h4>
+            <div class="box">뺄셈 연산을 수행합니다.</div>
+            <h4 id="operator.basic.*">*</h4>
+            <div class="box">곱셈 연산을 수행합니다.</div>
+        </div>
 
-            <fieldset id="dataType.pointer">
-                <legend>포인터</legend>
-            </fieldset><br>
+        <h3 id="operator.bit">비트 연산</h3>
+        <div class="box">
+            <div class="box">
+                단위 비트 조작이 가능한 <a href="#dataType.integer" style="text-decoration:underline;">정수형 자료형</a>에서 사용할 수 있는 연산자입니다. <br>
+                
+            </div>
 
-            <fieldset id="dataType.typedef">
-                <legend class="reservedKey">typedef</legend>
-            </fieldset>
-        </fieldset><br>
+            <h4 id="operator.bit.&">&</h4>
+            <div class="box">AND연산을 수행합니다.</div>
+        </div>
+        
+        <h3 id="operator.logic">논리연산</h3>
+        <div class="box">
+            <div class="box">
+                
+            </div>
 
-        <fieldset id="function">
-            <legend>함수</legend>
-            <fieldset id="function.main">
-                <legend class="code"><a href="#function" class="function">main</a>()</legend>
-            </fieldset><br>
+            <h4 id="operator.logic.!">!</h4>
+            <div class="box">
+                <div class="box">
+                    [ <a href="#dataType.bool" class="reservedKey">bool</a> ]
+                    !<a href="#operator.logic.!.cond" class="variable">cond</a>
+                </div>
+                <p id="operator.logic.!.cond" class="variable"><a href="#dataType.bool" class="reservedKey">bool</a> cond</p>
+                <div class="box">
+                    <a href="#operator.logic.!" class="mark">구문의 값</a>은 본래 가지고 있던 값과 반대되는 값이 됩니다.
+                </div>
 
-            <fieldset id="function.return">
-                <legend class="logic">return</legend>
-            </fieldset><br>
+                <p id="operator.logic.!.console">시연</p>
+                <div class="box">
+                    <a href="#operator.logic.!.cond" class="variable">cond</a>: <input type="text" id="operator.logic.!.console.cond"><br>
+                    <div onclick="operatorLogicNOT()" class="button">실행</div><br>
+                    <div class="box" id="operator.logic.!.console.exe"></div>
+                </div>
+            </div>
+            <h4 id="operator.logic.&&">&&</h4>
+            <h4 id="operator.logic.||">||</h4>
+            <div class="box">
+                
+            </div>
 
-            <fieldset id="function.pointer">
-                <legend>포인터</legend>
-            </fieldset>
-        </fieldset><br>
+            <h4 id="operator.logic.?:">삼항연산자</h4>
+            <div class="box">
+                <div class="box">
+                    [ <d id="operator.logic.?:.<T>" class="generic">T</d> ]
+                    <a href="#operator.logic.?:.cond" class="variable">cond</a> ? <a href="#operator.logic.?:.ifVal" class="variable">ifVal</a> : <a href="#operator.logic.?:.elseVal" class="variable">elseVal</a><br>
+                </div>
 
-        <fieldset id="string">
-            <legend>문자열</legend>
-        </fieldset>
-    </body>
+                <p id="operator.logic.?:.cond" class="variable"><a href="#dataType.bool" class="reservedKey">bool</a> cond</p>
+                <div class="box">
+                    <a href="#operator.logic.?:" class="mark">구문 전체</a>의 값을 결정할 조건문입니다.
+                </div>
+
+                <p id="operator.logic.?:.ifVal" class="variable"><a href="#operator.logic.?:.<T>" class="generic">T</a> ifVal</p>
+                <div class="box">
+                    만일 <a href="#operator.logic.?:.cond" class="variable">cond</a>가 참일 경우
+                    <a href="#operator.logic.?:" class="mark">구문 전체</a>는 <a href="#operator.logic.?:.ifVal" class="variable">ifVal</a>이 됩니다.
+                </div>
+
+                <p id="operator.logic.?:.elseVal" class="variable"><a href="#operator.logic.?:.<T>" class="generic">T</a> elseVal</p>
+                <div class="box">그 이외의 경우 <a href="#operator.logic.?:" class="mark">구문 전체</a>는 <a href="#operator.logic.?:.elseVal" class="variable">elseVal</a>이 됩니다.</div>
+
+                <p id="operator.logic.?:.console">시연</p>
+                <div class="box">
+                    <a href="#operator.logic.?:.cond" class="variable">cond</a>: <input type="text" id="operator.logic.?:.console.cond"><br>
+                    <a href="#operator.logic.?:.ifVal" class="variable">ifVal</a>: <input type="text" id="operator.logic.?:.console.ifVal"><br>
+                    <a href="#operator.logic.?:.elseVal" class="variable">elseVal</a>: <input type="text" id="operator.logic.?:.console.elseVal"><br>
+
+                    <div class="button" onclick="operatorLogicDreiVal()">실행</div>
+                    <div class="box" id="operator.logic.?:.console.exe"></div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="operator.ref">참조 연산</h3>
+        <div class="box">
+            <div class="box">
+                변수와 <a href="#pointer" class="mark">포인터</a>
+            </div>
+
+            <h4 id="operator.ref.&">&</h4>
+            <div class="box">
+                <div class="box" id="operator.ref.&.summary">
+                    [ <d class="generic" id="operator.ref.&.<T>">T</d><a href="#operator.ref.*">*</a> ]
+                        &<a href="#operator.ref.&.var" class="variable">var</a><br>
+                    정의되어 있는 변수인 <a href="#operator.ref.&.var" class="variable">var</a>의 위치(<a href="#pointer" class="mark">포인터</a>)를 나타냅니다. <br>
+                </div>
+                <p class="variable" id="operator.ref.&.var"><a class="generic" href="#operator.ref.&.<T>">T</a> var</p>
+                <div class="box">
+                    위치를 구할 변수의 이름입니다.
+                </div>
+            </div>
+
+            <h4 id="operator.ref.*">*</h4>
+            <div class="box"></div>
+
+            <h4 id="operator.ref.[]">[]</h4>
+            <div class="box"></div>
+
+            <h4 id="operator.ref..">.</h4>
+            <div class="box"></div>
+
+            <h4 id="operator.ref.::">::</h4>
+            <div class="box"></div>
+
+            <h4 id="operator.ref.->">-&gt;</h4>
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <h2 id="pointer">포인터</h2>
+    <div class="indent box">
+
+    </div>
+
+    <h2 id="array">배열</h2>
+    <div class="indent box">
+        <h3 id="array.string">문자열</h3>
+    </div>
+
+    <h2 id="function">함수</h2>
+    <div class="box indent">
+        <h3 id="function.main" class="function">main</h3>
+        <div class="box">
+            <div class="box">프로그램이 시작되면 맨 처음 시작되는 함수입니다.</div>
+
+            <h3 id="function.main.()">자주 사용하는 인수</h3>
+            <div class="indent box">
+                <a href="#dataType.int" class="reservedKey">int</a> <d id="function.main.(argc)" class="arg">argc</d>
+                <div class="box">입력된 인수들의 개수이자 <a href="#function.main.(argv)">argv</a>의 길이입니다.<br>
+                    아무런 인수가 들어가 있지 않은 경우에도 프로그램의 이름이 인수 그 자체가 되므로 기본값은 1이 됩니다.
+                </div>
+
+                <a href="#dataType.char" class="reservedKey">char</a><a href="#operator.ref.*">*</a> <d id="function.main.(argv)" class="arg">argv</d><a href="#operator.ref.[]">[]</a>
+                <div class="box">
+                    입력된 인수들은 공백 문자(스페이스바)로 구분된 문자열의 배열로써 <a href="#function.main.(argv)" class="arg">argv</a>에 저장됩니다.
+                </div>
+            </div>
+        </div>
+
+        <h3 id="function.return" class="logic">return</h3>
+        <div class="box"></div>
+    </div>
+
+    <h2 id="include" class="includeKey">#include</h2>
+    <div class="indent box">
+        <div class="box">외부 라이브러리를 가져옵니다.</div>
+
+        <h3 id="include.<>">&lt;&gt;</h3>
+        <div class="indent box">
+            
+        </div>
+
+        <h3 id='include.""'>""</h3>
+        <div class="indent box">
+
+        </div>
+    </div>
+
+    <h2 id="lib">라이브러리</h2>
+    <div class="indent box">
+        <a href="./header.html">기본 라이브러리</a>
+    </div>
+    <p style="color:rgb(95, 95, 95); font-size: 10px;">© 2023. YuiSanae2f</p>
+</body>
 </html>

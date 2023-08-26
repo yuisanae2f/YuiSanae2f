@@ -1,6 +1,6 @@
 html {
-    background-color: var(--background-color);
-    color: var(--color);
+    background-color: #161616;
+    color: #ffffff;
 }
 
 a:hover {
@@ -10,6 +10,10 @@ a:hover {
 a {
     text-decoration: none;
     color:#ffffff;
+}
+
+.mark {
+    text-decoration: underline;
 }
 
 .comment{
@@ -44,46 +48,34 @@ a {
     color:#ae09ae;
 }
 
-.param{
+.arg{
     color:#a9a9a9;
 }
 
-legend{
-    color:#00ffff;
+.variable {
+    color:rgb(137, 198, 255);
 }
 
-legend.code{
-    color:#ffffff
+.indent {
+    margin-left: 15px;
 }
 
-:root {
-    --background-color: #161616;
-    --color: #ffffff;
+.box {
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(100, 100, 100, 0.1);
 }
 
-.checkBox {
-    background-color: white;
-    width: 15px;
-    height: 15px;
-    margin-right: 7px;
-    border-radius: 7.5px;
-
-    align-items: center;
-    display: flex;
-    justify-content:center;
+h2 {
+    margin-left: 10px;
+    padding-left: 10px;
 }
 
-div.checkBox div:not(.checkOn){
-    height: 0%;
+h1 {
+    padding-left:10px;
 }
 
-.checkOn{
-    background-color: black;
-    width: 70%;
-    height: 70%;
-
-    border-radius: 50%;
-
-    transition: width 0.2s;
-    transition: height 0.2s;
+.button:hover {
+    text-decoration: underline;
 }
