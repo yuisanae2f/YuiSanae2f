@@ -5,9 +5,10 @@
     <title>C/C++</title>
     <link rel="stylesheet" href="../global.css">
     <script src="main.js"></script>
+    <script src="../global.js"></script>
 </head>
 <body>
-    <h1><a href="../index.html#tutorial">tutorial</a>.ccpp</h1>
+    <h1><a href="../index.html">yuisanae2f</a>.<a href="../tutorial.html#ccpp">tutorial</a>.ccpp</h1>
 
     <h2 id="helloWorld">Hello World!</h2>
     <div class="indent box">
@@ -15,22 +16,49 @@
         <h3 id="helloWorld.c">C</h3>
         <div class="box">
             <pre>
-<a href="#include" class="includeKey">#include</a> <a href="" class="str">&lt;stdio.h&gt;</a>
-<a href="#dataType.int" class="reservedKey">int</a> <a href="#function.main" class="function">main</a>() {
-    <a href="" class="function">printf</a>(<a href="" class="str">"Hello World!"</a>);
-    <a href="#function.return" class="logic">return</a> 0;
+<a href="#include" class="includeKey" title="외부 라이브러리를 들고 오는 방법이다.">#include</a> <a href="" class="str" title="실행할 수 있는 함수를 모아둘 수 있는 또 다른 확장자명, 헤더이다. standard input output을 줄여 stdio라는 설이 있다.">&lt;stdio.h&gt;</a>
+<a href="#dataType.int" class="reservedKey" title="설마 void로 바꾸고 싶은 건 아니겠죠?">int</a> <a href="#function.main" class="function">main</a>() {
+    <a href="" class="function" title='사실 printf는 서식 지정자로 작동하기 때문에, printf("%d", "Hello World!");가 맞는 구문이라고 할 수 있겠다.'>printf</a>(<a href="#array.string" class="str" title="C언어의 창시자가 처음 언어를 실행시킬 때 테스트로 'Hello World!'를 출력시킨 사실을 뿌리로 이 문자열은 대부분의 테스트에서 출력으로 쓰이는 영광스러운 자리를 안게 되었다는 전설이 있다.">"Hello World!"</a>);
+    <a href="#function.return" class="logic" title="함수를 끝내고 값을 반환할 때 return이라는 키워드를 쓰는데, 이후 함수 그 자체의 값은 반환값이 되는 것이다.">return</a> 0;
 }</pre>
         </div>
 
         <h3 id="helloWorld.cpp">C++</h3>
         <div class="box">
             <pre>
-<a href="#include" class="includeKey">#include</a> <a href="" class="str">&lt;iostream&gt;</a>
-<a href="#dataType.int" class="reservedKey">int</a> <a href="#function.main" class="function">main</a>() {
-    std::cout << <a href="" class="str">"Hello World!"</a>;
-    <a href="#function.return" class="logic">return</a> 0;
+<a href="#include" class="includeKey" title="...위에서 설명했다고 생각했는데.">#include</a> <a href="" class="str" title="어딘가에서는 iostream.h라고 쓰기도 한다고 한다. 인도에 있는 누님께 배웠는데, 그 이유는 둘 다 몰랐다고 한다.">&lt;iostream&gt;</a>
+<a href="#dataType.int" class="reservedKey" title="...왜 그러는 거죠?">int</a> <a href="#function.main" class="function">main</a>() {
+    std<a href="#operator.ref.::" title="아아, 이것은 네임스페이스 참조라는 것이다. using문을 통해 생략할 수 있지.">::</a>cout <a href="#operator.bit.<<" title="C++에서는 꽤나 생소한 비트 시프트 연산이 나온다.">&lt;&lt;</a> <a href="#array.string" class="str" title="하지만 요새는 Hello 이후에 프로그래밍 언어를 넣는 경우도 있다고 한다.">"Hello World!"</a>;
+    <a href="#function.return" class="logic" title="덤으로 이 코드에서 사용된 0의 의미를 간략히 설명하자면, 오류가 없다는 뜻이 되겠다.">return</a> 0;
 }
             </pre>
+        </div>
+    </div>
+
+    <h2 id="variable">변수</h2>
+    <div class="indent box">
+        <h3 id="variable.declare"><a href="#variable" title="바로 위에 있긴 한데...">변수</a> 선언</h3>
+        <div class="box">
+            <a id="variable.declare.<>.T" href="#dataType" class="generic" title="딱 잘라 말하기 어려워 임시로 지정한 자료형이므로 이걸 클릭한다면 당신을 자료형에 대한 설명으로 보낼 것이다.">T</a> <d class="variable" id="variable.declare.varName">varName</d>;<br>
+            <a href="#variable.declare.<>.T" class="generic" title="여러 형태의 자료를 저장할 수 있고, 이를 위해서는 자료형을 알아야 한다.">T</a>의 형태로 된 변수 <a href="#variable.declare.varName" class="variable" title="사실 메모리를 할당해서 varName이라는 이름을 붙여 주는 것이다.">varName</a>을 새로 만듭니다.
+        </div>
+
+        <h3 id="variable.init">변수 초기화</h3>
+        <div class="box">
+            <div class="box">
+                <a id="variable.init.<>.T" href="#dataType" class="generic" title="딱 잘라 말하기 어려워 임시로 지정한 자료형이므로 이걸 클릭한다면 당신을 자료형에 대한 설명으로 보낼 것이다.">T</a> <d class="variable" id="variable.init.varName">varName</d> = <a href="#dataType" class="generic" title="딱 잘라 말하기 어려워 임시로 지정한 자료형이므로 이걸 클릭한다면 당신을 자료형에 대한 설명으로 보낼 것이다.">T</a>.<a href="#variable.init.<>.T.value">value</a>;
+            </div>
+
+            <h4 id="variable.init.<>.T.value"><a href="#variable.init.<>.T" class="generic">T</a>.value</h4>
+            <div class="box">
+                T의 형태를 가진 임의의 자료를 T.value라 명시했습니다. <br>
+                예를 들어 정수인 <a href="#dataType.int" class="reservedKey">int</a>의 경우에는 그 value를 5라 생각할 것입니다. <br><br>
+
+                이 경우 <a href="#dataType.integer" class="mark">정수 형태</a>인 <a href="#variable.init.<>.T.value.varName" class="variable">varName</a>을 5로 초기화시키는 방법은 아래와 같을 것입니다. <br><br>
+                <div class="box">
+                    <a href="#dataType.int" class="reservedKey">int</a> <d class="variable" id="variable.init.<>.T.value.varName">varName</d> = 5;
+                </div>
+            </div>
         </div>
     </div>
 
@@ -51,13 +79,29 @@
             </div>
     
             <h3 id="dataType.char" class="reservedKey">char</h3>
-            <div class="box">1byte의 크기를 가진 정수를 아스키 형태의 문자로 표현한 것을 뜻합니다.</div>
+            <div class="box">
+                <div class="box">1byte의 크기를 가진 정수를 아스키 형태의 문자로 표현한 것을 뜻합니다.</div>
+
+                <h4 id="dataType.char.fromChar.console">문자는 정수가 됩니다.</h4>
+                <div class="box">
+                    문자: <input type="text" id="dataType.char.fromChar.console._"><br>
+                    <div class="button" onclick="dataTypeCharFromChar()">실행</div>
+                    <div class="box" id="dataType.char.fromChar.console.exe"></div>
+                </div>
+
+                <h4 id="dataType.char.fromInt.console">정수는 문자가 됩니다.</h4>
+                <div class="box">
+                    정수: <input type="number" id="dataType.char.fromInt.console._"><br>
+                    <div class="button" onclick="dataTypeCharFromInt()">실행</div>
+                    <div class="box" id="dataType.char.fromInt.console.exe"></div>
+                </div>
+            </div>
     
             <h3 id="dataType.int" class="reservedKey">int</h3>
             <div class="box">4byte의 크기를 가진 정수를 뜻합니다.</div>
         </div>
 
-        <h3>부동 소수형</h3>
+        <h3 id="dataType.floatingPoint">부동 소수형</h3>
         <div class="box">
             <h3 id="dataType.float" class="reservedKey">float</h3>
             <div class="box">4byte의 크기를 가진 부동 소수점을 뜻합니다.</div>
@@ -67,28 +111,62 @@
         </div>
     </div>
 
-    <h2 id="operator">연산자 모음</h2>
+    <h2 id="operator">연산자</h2>
     <div class="indent box">
         <h3 id="operator.basic">사칙연산</h3>
         <div class="box">
+            <div class="box"></div>
+            <p id="operator.basic.int"><a href="#dataType.int" class="reservedKey" title="정수 형태라고 한다.">int</a>일 경우</p>
+            <div class="box">
+                <a href="#dataType.integer" class="mark" title="정수 자료형일 경우 int가 아니라도 무방하다는 말이다.">정수 자료형</a>으로 사칙연산자를 시도할 경우, 이들은 정수로 취급합니다. <br>
+
+                쉽게 말해, <a href="#dataType.integer" class="mark">여기</a>에 속해 있을 경우 어떤 형태든 간에 숫자로 간주된다는 것입니다.
+                <br><br>
+
+                이를테면, <a href="#dataType.bool" class="reservedKey" title="true가 1, false가 0이라는 말은 자주 들어 봐서 알 것이다.">bool</a>일 경우 0 혹은 1로 치환되거나 <br>
+                <a href="#dataType.char" title="아스키 코드를 참고하자." class="reservedKey">char</a>일 경우, 아스키 코드로 반환되거나 하는 방식입니다.
+            </div>
+
             <h4 id="operator.basic.+">+</h4>
-            <div class="box">덧셈 연산을 수행합니다.</div>
+            <div class="box"></div>
+
             <h4 id="operator.basic.-">-</h4>
             <div class="box">뺄셈 연산을 수행합니다.</div>
+
             <h4 id="operator.basic.*">*</h4>
             <div class="box">곱셈 연산을 수행합니다.</div>
+
+            <h4 id="operator.basic./">/</h4>
+            <div class="box"></div>
+
+            <h4 id="operator.basic.%">%</h4>
+            <div class="box"></div>
         </div>
 
         <h3 id="operator.bit">비트 연산</h3>
         <div class="box">
             <div class="box">
-                단위 비트 조작이 가능한 <a href="#dataType.integer" style="text-decoration:underline;">정수형 자료형</a>에서 사용할 수 있는 연산자입니다. <br>
+                단위 비트 조작이 가능한 <a href="#dataType.integer" style="text-decoration:underline;" title="내가 다 적어 놓았는지 의문이 들어 여기에 추가로 적어 놓겠다.
+bool, char, short, int, long, long long...
+물론 앞에 unsigned를 붙인다고 해도 달라지는 것 없이 정상작동한다.">정수형 자료형</a>에서 사용할 수 있는 연산자입니다. <br>
                 
             </div>
 
             <h4 id="operator.bit.&">&</h4>
             <div class="box">AND연산을 수행합니다.</div>
+
+            <h4 id="operator.bit.shift">시프트 연산자</h4>
+            <div class="box">
+                <p id="operator.bit.>>">>></p>
+                <p id="operator.bit.<<"><<</p>
+            </div>
         </div>
+
+        <h3 id="operator.assign">대입 연산</h3>
+        <div class="box">
+            <h4 id="operator.assign.="></h4>
+        </div>
+
         
         <h3 id="operator.logic">논리연산</h3>
         <div class="box">
@@ -100,17 +178,18 @@
             <div class="box">
                 <div class="box">
                     [ <a href="#dataType.bool" class="reservedKey">bool</a> ]
-                    !<a href="#operator.logic.!.cond" class="variable">cond</a>
+                    <a href="#operator.logic.!">!</a><a href="#operator.logic.!.cond" class="variable">cond</a>
                 </div>
                 <p id="operator.logic.!.cond" class="variable"><a href="#dataType.bool" class="reservedKey">bool</a> cond</p>
                 <div class="box">
-                    <a href="#operator.logic.!" class="mark">구문의 값</a>은 본래 가지고 있던 값과 반대되는 값이 됩니다.
+                    <a href="#operator.logic.!" class="mark" title="그러니까 cond가 true였으면 false가 된다는 소리다.">구문의 값</a>은 본래 가지고 있던 값과 반대되는 값이 됩니다.
                 </div>
 
                 <p id="operator.logic.!.console">시연</p>
                 <div class="box">
                     <a href="#operator.logic.!.cond" class="variable">cond</a>: <input type="text" id="operator.logic.!.console.cond"><br>
-                    <div onclick="operatorLogicNOT()" class="button">실행</div><br>
+                    <div onclick="operatorLogicNOT()" class="button" title="눈치챘겠지만 이곳에서 실행될 떄 bool값은 0이나 false가 아닐 경우 전부 true로 받아들인다.
+이건 본인이 만든 문서에서 앞으로도 변하지 않을 유구한 전통이라 할 수 있다.">실행</div>
                     <div class="box" id="operator.logic.!.console.exe"></div>
                 </div>
             </div>
@@ -123,23 +202,23 @@
             <h4 id="operator.logic.?:">삼항연산자</h4>
             <div class="box">
                 <div class="box">
-                    [ <d id="operator.logic.?:.<T>" class="generic">T</d> ]
+                    [ <a id="operator.logic.?:.<>.T" class="generic" href="#dataType" title="이곳에 T는 둘이 있다. 이 경우 두 T는 중복되어야 함을 뜻한다.">T</a> ]
                     <a href="#operator.logic.?:.cond" class="variable">cond</a> ? <a href="#operator.logic.?:.ifVal" class="variable">ifVal</a> : <a href="#operator.logic.?:.elseVal" class="variable">elseVal</a><br>
                 </div>
 
                 <p id="operator.logic.?:.cond" class="variable"><a href="#dataType.bool" class="reservedKey">bool</a> cond</p>
                 <div class="box">
-                    <a href="#operator.logic.?:" class="mark">구문 전체</a>의 값을 결정할 조건문입니다.
+                    <a href="#operator.logic.?:" class="mark" title="그러니까 cond ? ifVal : elseVal을 말하는 것이다.">구문 전체</a>의 값을 결정할 조건문입니다.
                 </div>
 
-                <p id="operator.logic.?:.ifVal" class="variable"><a href="#operator.logic.?:.<T>" class="generic">T</a> ifVal</p>
+                <p id="operator.logic.?:.ifVal" class="variable"><a href="#operator.logic.?:.<>.T" class="generic" title="말인즉슨 ifVal에 int값을 넣고 elseVal에 char을 넣지 말라는 소리다.">T</a> ifVal</p>
                 <div class="box">
                     만일 <a href="#operator.logic.?:.cond" class="variable">cond</a>가 참일 경우
-                    <a href="#operator.logic.?:" class="mark">구문 전체</a>는 <a href="#operator.logic.?:.ifVal" class="variable">ifVal</a>이 됩니다.
+                    <a href="#operator.logic.?:" class="mark" title="cond ? ifVal : elseVal">구문 전체</a>는 <a href="#operator.logic.?:.ifVal" class="variable">ifVal</a>이 됩니다.
                 </div>
 
-                <p id="operator.logic.?:.elseVal" class="variable"><a href="#operator.logic.?:.<T>" class="generic">T</a> elseVal</p>
-                <div class="box">그 이외의 경우 <a href="#operator.logic.?:" class="mark">구문 전체</a>는 <a href="#operator.logic.?:.elseVal" class="variable">elseVal</a>이 됩니다.</div>
+                <p id="operator.logic.?:.elseVal" class="variable"><a href="#operator.logic.?:.<>.T" class="generic" title="...사실 둘 다 까고 보면 숫자값이니 상관은 없을지도.">T</a> elseVal</p>
+                <div class="box">그 이외의 경우 <a href="#operator.logic.?:" class="mark" title="...이해가 안 된다면 그냥 클릭해서 다시 보고 오는 것도 방법이다.">구문 전체</a>는 <a href="#operator.logic.?:.elseVal" class="variable">elseVal</a>이 됩니다.</div>
 
                 <p id="operator.logic.?:.console">시연</p>
                 <div class="box">
@@ -156,17 +235,17 @@
         <h3 id="operator.ref">참조 연산</h3>
         <div class="box">
             <div class="box">
-                변수와 <a href="#pointer" class="mark">포인터</a>
+                <a href="#variable" title="사실상 이걸 만들지 못한다면, 당신은 이걸 읽고 있어도 의미가 없다." class="mark">변수</a>와 <a href="#pointer" class="mark" title="변수라는 상자가 있으면 그 상자가 놓인 장소라고 하면 되겠다.">포인터</a>에 관련된 연산자이다.
             </div>
 
             <h4 id="operator.ref.&">&</h4>
             <div class="box">
                 <div class="box" id="operator.ref.&.summary">
-                    [ <d class="generic" id="operator.ref.&.<T>">T</d><a href="#operator.ref.*">*</a> ]
+                    [ <a class="generic" id="operator.ref.&.<>.T" href="#dataType" title="이쯤되면 학습할 때 되었다고 생각하긴 하는데, 일단 날리고 생각해 보기로 했다.">T</a><a href="#operator.ref.*" title="자료형 옆에 붙어 있으니 이 자료형의 포인터라는 뜻이다. T포인터라고 생각하면 편하다.">*</a> ]
                         &<a href="#operator.ref.&.var" class="variable">var</a><br>
-                    정의되어 있는 변수인 <a href="#operator.ref.&.var" class="variable">var</a>의 위치(<a href="#pointer" class="mark">포인터</a>)를 나타냅니다. <br>
+                    정의되어 있는 변수인 <a href="#operator.ref.&.var" class="variable">var</a>의 위치(<a href="#pointer" class="mark" title="만능">포인터</a>)를 나타냅니다. <br>
                 </div>
-                <p class="variable" id="operator.ref.&.var"><a class="generic" href="#operator.ref.&.<T>">T</a> var</p>
+                <p class="variable" id="operator.ref.&.var"><a class="generic" href="#operator.ref.&.<>.T">T</a> var</p>
                 <div class="box">
                     위치를 구할 변수의 이름입니다.
                 </div>
@@ -196,25 +275,26 @@
 
     <h2 id="array">배열</h2>
     <div class="indent box">
-        <h3 id="array.string">문자열</h3>
+        <h3 id="array.string" class="str">"문자열"</h3>
+        <div class="box"></div>
     </div>
 
     <h2 id="function">함수</h2>
     <div class="box indent">
-        <h3 id="function.main" class="function">main</h3>
+        <h3 id="function.main" class="function"><a href="#dataType.int" class="reservedKey" title="보통 int가 표준이라지만 return값을 주는 게 귀찮은 사람들을 위해서 void를 넣기도 한다.">int</a> main</h3>
         <div class="box">
             <div class="box">프로그램이 시작되면 맨 처음 시작되는 함수입니다.</div>
 
             <h3 id="function.main.()">자주 사용하는 인수</h3>
             <div class="indent box">
-                <a href="#dataType.int" class="reservedKey">int</a> <d id="function.main.(argc)" class="arg">argc</d>
-                <div class="box">입력된 인수들의 개수이자 <a href="#function.main.(argv)">argv</a>의 길이입니다.<br>
+                <a href="#dataType.int" class="reservedKey">int</a> <d id="function.main.().argc" class="arg">argc</d>
+                <div class="box">입력된 인수들의 개수이자 <a href="#function.main.().argv">argv</a>의 길이입니다.<br>
                     아무런 인수가 들어가 있지 않은 경우에도 프로그램의 이름이 인수 그 자체가 되므로 기본값은 1이 됩니다.
                 </div>
 
-                <a href="#dataType.char" class="reservedKey">char</a><a href="#operator.ref.*">*</a> <d id="function.main.(argv)" class="arg">argv</d><a href="#operator.ref.[]">[]</a>
+                <a href="#dataType.char" class="reservedKey">char</a><a href="#operator.ref.*">*</a> <d id="function.main.().argv" class="arg">argv</d><a href="#operator.ref.[]">[]</a>
                 <div class="box">
-                    입력된 인수들은 공백 문자(스페이스바)로 구분된 문자열의 배열로써 <a href="#function.main.(argv)" class="arg">argv</a>에 저장됩니다.
+                    입력된 인수들은 공백 문자(스페이스바)로 구분된 문자열의 배열로써 <a href="#function.main.().argv" class="arg">argv</a>에 저장됩니다.
                 </div>
             </div>
         </div>
@@ -242,6 +322,6 @@
     <div class="indent box">
         <a href="./header.html">기본 라이브러리</a>
     </div>
-    <p style="color:rgb(95, 95, 95); font-size: 10px;">© 2023. YuiSanae2f</p>
+    <p class="indent" style="color:rgb(95, 95, 95); font-size: 10px;">© 2023. YuiSanae2f</p>
 </body>
 </html>
