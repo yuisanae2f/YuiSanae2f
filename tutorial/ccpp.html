@@ -8,7 +8,7 @@
     <script src="../global.js"></script>
 </head>
 <body>
-    <h1><a href="../index.html">yuisanae2f</a>.<a href="../tutorial.html#ccpp">tutorial</a>.ccpp</h1>
+    <h1><a href="../index.html#tutorial">yuisanae2f</a>.<a href="../tutorial.html#ccpp">tutorial</a>.ccpp</h1>
 
     <h2 id="helloWorld">Hello World!</h2>
     <div class="indent box">
@@ -19,7 +19,7 @@
 <a href="#include" class="includeKey" title="외부 라이브러리를 들고 오는 방법이다.">#include</a> <a href="" class="str" title="실행할 수 있는 함수를 모아둘 수 있는 또 다른 확장자명, 헤더이다. standard input output을 줄여 stdio라는 설이 있다.">&lt;stdio.h&gt;</a>
 <a href="#dataType.int" class="reservedKey" title="설마 void로 바꾸고 싶은 건 아니겠죠?">int</a> <a href="#function.main" class="function">main</a>() {
     <a href="" class="function" title='사실 printf는 서식 지정자로 작동하기 때문에, printf("%d", "Hello World!");가 맞는 구문이라고 할 수 있겠다.'>printf</a>(<a href="#array.string" class="str" title="C언어의 창시자가 처음 언어를 실행시킬 때 테스트로 'Hello World!'를 출력시킨 사실을 뿌리로 이 문자열은 대부분의 테스트에서 출력으로 쓰이는 영광스러운 자리를 안게 되었다는 전설이 있다.">"Hello World!"</a>);
-    <a href="#function.return" class="logic" title="함수를 끝내고 값을 반환할 때 return이라는 키워드를 쓰는데, 이후 함수 그 자체의 값은 반환값이 되는 것이다.">return</a> 0;
+    <a href="#function.return" class="logic" title="함수를 끝내고 값을 반환할 때 return이라는 키워드를 쓰는데, 이후 함수 그 자체의 값은 반환값이 되는 것이다.">return</a> <a href="#dataType.bool" class="generic" title="전통적으로 main함수는 0을 적는 것으로써 어플리케이션에 오류가 없음을 명시한다.">0</a>;
 }</pre>
         </div>
 
@@ -29,7 +29,7 @@
 <a href="#include" class="includeKey" title="...위에서 설명했다고 생각했는데.">#include</a> <a href="" class="str" title="어딘가에서는 iostream.h라고 쓰기도 한다고 한다. 인도에 있는 누님께 배웠는데, 그 이유는 둘 다 몰랐다고 한다.">&lt;iostream&gt;</a>
 <a href="#dataType.int" class="reservedKey" title="...왜 그러는 거죠?">int</a> <a href="#function.main" class="function">main</a>() {
     std<a href="#operator.ref.::" title="아아, 이것은 네임스페이스 참조라는 것이다. using문을 통해 생략할 수 있지.">::</a>cout <a href="#operator.bit.<<" title="C++에서는 꽤나 생소한 비트 시프트 연산이 나온다.">&lt;&lt;</a> <a href="#array.string" class="str" title="하지만 요새는 Hello 이후에 프로그래밍 언어를 넣는 경우도 있다고 한다.">"Hello World!"</a>;
-    <a href="#function.return" class="logic" title="덤으로 이 코드에서 사용된 0의 의미를 간략히 설명하자면, 오류가 없다는 뜻이 되겠다.">return</a> 0;
+    <a href="#function.return" class="logic" title="덤으로 이 코드에서 사용된 0의 의미를 간략히 설명하자면, 오류가 없다는 뜻이 되겠다.">return</a> <a href="#dataType.bool" class="generic" title="따라서 이 경우 0 이외에는 오류가 있다는 것으로 확인, 그 경우 반환값을 오류 코드로 읽는다.">0</a>;
 }
             </pre>
         </div>
@@ -51,12 +51,12 @@
 
             <h4 id="variable.init.<>.T.value"><a href="#variable.init.<>.T" class="generic">T</a>.value</h4>
             <div class="box">
-                T의 형태를 가진 임의의 자료를 T.value라 명시했습니다. <br>
-                예를 들어 정수인 <a href="#dataType.int" class="reservedKey">int</a>의 경우에는 그 value를 5라 생각할 것입니다. <br><br>
+                T의 형태를 가진 임의의 자료를 <a href="#variable.init.<>.T" class="generic">T</a>.<a href="#variable.init.<>.T.value">value</a> 명시했습니다. <br>
+                예를 들어 정수인 <a href="#dataType.int" class="reservedKey">int</a>의 경우에는 그 <a href="#variable.init.<>.T.value">value</a>를 <a href="#dataType.integer" class="generic">5</a>라 생각할 것입니다. <br><br>
 
-                이 경우 <a href="#dataType.integer" class="mark">정수 형태</a>인 <a href="#variable.init.<>.T.value.varName" class="variable">varName</a>을 5로 초기화시키는 방법은 아래와 같을 것입니다. <br><br>
+                이 경우 <a href="#dataType.integer" class="mark">정수 형태</a>인 <a href="#variable.init.<>.T.value.varName" class="variable">varName</a>을 <a href="#dataType.integer" class="generic">5</a>로 초기화시키는 방법은 아래와 같을 것입니다. <br><br>
                 <div class="box">
-                    <a href="#dataType.int" class="reservedKey">int</a> <d class="variable" id="variable.init.<>.T.value.varName">varName</d> = 5;
+                    <a href="#dataType.int" class="reservedKey">int</a> <d class="variable" id="variable.init.<>.T.value.varName">varName</d> = <a href="#dataType.integer" class="generic">5</a>;
                 </div>
             </div>
         </div>
@@ -70,17 +70,25 @@
         <div class="box">
             <h3 id="dataType.bool" class="reservedKey">bool</h3>
             <div class="box">
-                1bit의 크기를 가진 이진 정수를 뜻합니다.
+                1bit의 크기를 가진 이진 정수를 뜻합니다. <br>
+                다른 정수값을 <a href="#dataType.bool" class="reservedKey">bool</a>로 바꿀 경우, <a href="#dataType.bool.false" class="generic">0</a>일 때 <a href="#dataType.bool.false" class="reservedKey">false</a>가 되며, 나머지 경우 전부 <a href="#dataType.bool.true" class="reservedKey">true</a>로 간주됩니다.
                 <h4 id="dataType.bool.true" class="reservedKey">true</h4>
-                <div class="box">참값을 뜻하며, 1의 값을 가집니다.</div>
+                <div class="box">참값을 뜻하며, <a href="#dataType.bool.true" class="generic">1</a>의 값을 가집니다.</div>
     
                 <h4 id="dataType.bool.false" class="reservedKey">false</h4>
-                <div class="box">거짓값을 뜻하며, 0의 값을 가집니다.</div>
+                <div class="box">거짓값을 뜻하며, <a href="#dataType.bool.false" class="generic">0</a>의 값을 가집니다.</div>
             </div>
     
             <h3 id="dataType.char" class="reservedKey">char</h3>
             <div class="box">
-                <div class="box">1byte의 크기를 가진 정수를 아스키 형태의 문자로 표현한 것을 뜻합니다.</div>
+                <div class="box str">'A'</div>
+                <div class="box">
+                    <d title="1비트가 0과 1이고 그게 8개 있으면 byte이므로 2의 8제곱인 128이라 할 수 있다. 그것이 아스키 코드가 0부터 127까지밖에 표현하지 못하는 이유라 할 수 있겠다.">1byte</d>의 크기를 가진 <a href="#dataType.integer" class="mark">정수</a>를 아스키 형태의 문자로 표현한 것을 뜻합니다. <br>
+                    한 글자를 작은 따옴표로 감싸 아래와 같은 형태로 표현할 수 있습니다. <p></p>
+                    <div class="box"><a href="#dataType.char" class="reservedKey">char</a> <a href="#variable.init" class="variable">var</a> = <a href="#dataType.char" class="str">'A'</a></div>
+
+                    한 글자는 하나의 <a href="#dataType.integer" class="mark">숫자</a>에 치환되므로 <a href="#array.string" class="mark">여러 개의 문자</a>를 표현하기 위해서는 <a href="#array" class="mark">배열</a>을 사용할 필요가 있습니다.
+                </div>
 
                 <h4 id="dataType.char.fromChar.console">문자는 정수가 됩니다.</h4>
                 <div class="box">
@@ -94,6 +102,39 @@
                     정수: <input type="number" id="dataType.char.fromInt.console._"><br>
                     <div class="button" onclick="dataTypeCharFromInt()">실행</div>
                     <div class="box" id="dataType.char.fromInt.console.exe"></div>
+                </div>
+
+                <h4 id="\">Escape Sequence</h4>
+                <div class="box">
+                    <div class="box">
+                        문자열 내에서 특정한 의미를 가진 특수한 문자 조합을 나타내는 <a href="#dataType.char" class="str">'\'</a>와 다른 문자로 이뤄진 문자열이나 컴파일러 내에서는 문자로 받아들입니다.
+                    </div>
+                    <a id="\\" class="str" href="#dataType.char">\\</a>
+                    <div class="box"></div>
+                    <a id='\"' class="str" href="#dataType.char">\"</a>
+                    <div class="box"></div>
+                    <a id="\'" class="str" href="#dataType.char">\'</a>
+                    <div class="box"></div>
+                    <a id="\n" class="str" href="#dataType.char">\n</a>
+                    <div class="box"></div>
+                    <a id="\t" class="str" href="#dataType.char">\t</a>
+                    <div class="box"></div>
+                    <a id="\r" class="str" href="#dataType.char">\r</a>
+                    <div class="box"></div>
+                    <a id="\b" class="str" href="#dataType.char">\b</a>
+                    <div class="box"></div>
+                    <a id="\f" class="str" href="#dataType.char">\f</a>
+                    <div class="box"></div>
+                    <a id="\v" class="str" href="#dataType.char">\v</a>
+                    <div class="box"></div>
+                    <a id="\a" class="str" href="#dataType.char">\a</a>
+                    <div class="box"></div>
+                    <a id="\0" class="str" href="#dataType.char">\0</a>
+                    <div class="box"></div>
+                    <a id="\xhh" class="str" href="#dataType.char">\xhh</a>
+                    <div class="box"></div>
+                    <a id="\ooo" class="str" href="#dataType.char">\ooo</a>
+                    <div class="box"></div>
                 </div>
             </div>
     
@@ -123,7 +164,7 @@
                 쉽게 말해, <a href="#dataType.integer" class="mark">여기</a>에 속해 있을 경우 어떤 형태든 간에 숫자로 간주된다는 것입니다.
                 <br><br>
 
-                이를테면, <a href="#dataType.bool" class="reservedKey" title="true가 1, false가 0이라는 말은 자주 들어 봐서 알 것이다.">bool</a>일 경우 0 혹은 1로 치환되거나 <br>
+                이를테면, <a href="#dataType.bool" class="reservedKey" title="true가 1, false가 0이라는 말은 자주 들어 봐서 알 것이다.">bool</a>일 경우 <a href="#dataType.bool.false" class="generic">0</a> 혹은 <a href="#dataType.bool.true" class="generic">1</a>로 치환되거나 <br>
                 <a href="#dataType.char" title="아스키 코드를 참고하자." class="reservedKey">char</a>일 경우, 아스키 코드로 반환되거나 하는 방식입니다.
             </div>
 
@@ -164,7 +205,7 @@ bool, char, short, int, long, long long...
 
         <h3 id="operator.assign">대입 연산</h3>
         <div class="box">
-            <h4 id="operator.assign.="></h4>
+            <h4 id="operator.assign.=">=</h4>
         </div>
 
         
@@ -173,6 +214,8 @@ bool, char, short, int, long, long long...
             <div class="box">
                 
             </div>
+
+            <h4 id="operator.logic.==">==</h4>
 
             <h4 id="operator.logic.!">!</h4>
             <div class="box">
@@ -235,14 +278,17 @@ bool, char, short, int, long, long long...
         <h3 id="operator.ref">참조 연산</h3>
         <div class="box">
             <div class="box">
-                <a href="#variable" title="사실상 이걸 만들지 못한다면, 당신은 이걸 읽고 있어도 의미가 없다." class="mark">변수</a>와 <a href="#pointer" class="mark" title="변수라는 상자가 있으면 그 상자가 놓인 장소라고 하면 되겠다.">포인터</a>에 관련된 연산자이다.
+                <a href="#variable" title="사실상 이걸 만들지 못한다면, 당신은 이걸 읽고 있어도 의미가 없다." class="mark">변수</a>와 <a href="#pointer" class="mark" title="변수라는 상자가 있으면 그 상자가 놓인 장소라고 하면 되겠다.">포인터</a>에 관련된 연산자입니다. <br>
+                대부분의 경우 <a href="#variable" title="진짜 이걸 모르겠다고?" class="mark">변수 이름</a> 혹은 <a href="#pointer" class="mark" title="대부분 포인터 관련 연산이기 때문에">포인터</a>와 관련된 연산을 수행하기 때문에 <a href="#variable" title="진심으로?" class="mark">변수</a>를 미리 정의해 놓은 것을 전제로 진행됩니다.
             </div>
 
             <h4 id="operator.ref.&">&</h4>
             <div class="box">
                 <div class="box" id="operator.ref.&.summary">
-                    [ <a class="generic" id="operator.ref.&.<>.T" href="#dataType" title="이쯤되면 학습할 때 되었다고 생각하긴 하는데, 일단 날리고 생각해 보기로 했다.">T</a><a href="#operator.ref.*" title="자료형 옆에 붙어 있으니 이 자료형의 포인터라는 뜻이다. T포인터라고 생각하면 편하다.">*</a> ]
-                        &<a href="#operator.ref.&.var" class="variable">var</a><br>
+                    [ <a class="generic" id="operator.ref.&.<>.T" href="#dataType" title="이쯤되면 학습할 때 되었다고 생각하긴 하는데, 일단 날리고 생각해 보기로 했다.">T</a><a href="#pointer.init" title="자료형 옆에 붙어 있으니 이 자료형의 포인터라는 뜻이다. T포인터라고 생각하면 편하다.">*</a> ]
+                        &<a href="#operator.ref.&.var" class="variable">var</a>
+                </div>
+                <div class="box">
                     정의되어 있는 변수인 <a href="#operator.ref.&.var" class="variable">var</a>의 위치(<a href="#pointer" class="mark" title="만능">포인터</a>)를 나타냅니다. <br>
                 </div>
                 <p class="variable" id="operator.ref.&.var"><a class="generic" href="#operator.ref.&.<>.T">T</a> var</p>
@@ -252,7 +298,12 @@ bool, char, short, int, long, long long...
             </div>
 
             <h4 id="operator.ref.*">*</h4>
-            <div class="box"></div>
+            <div class="box">
+                <div class="box">[ T ] *point</div>
+                <div class="box">정의된 포인터 point의 값을 참조합니다.</div>
+                <p>T* point</p>
+                <div class="box"></div>
+            </div>
 
             <h4 id="operator.ref.[]">[]</h4>
             <div class="box"></div>
@@ -270,13 +321,36 @@ bool, char, short, int, long, long long...
 
     <h2 id="pointer">포인터</h2>
     <div class="indent box">
+        <div class="box">
+            모든 <a href="#variable" class="mark">변수</a>는 정의된 순간 각자의 메모리를 할당받습니다. <br>
+            그 메모리의 위치 또한 자료형으로 쓰일 수 있으며, 이를 포인터라 부릅니다.
+        </div>
+        <h3 id="pointer.init"><a href="#pointer">포인터</a> <a href="#variable.init">초기화</a></h3>
+        <div class="box">
+            <div class="box"><a href="#pointer.init.<>.T" class="generic">T</a>* <a class="variable" href="#variable.init" title="기본적으로 포인터를 초기화하는 과정은 변수를 초기화하는 과정과 같으므로 ">varPoint</a> = <a href="#operator.ref.&" title="변수 이름 앞에 붙이면 변수의 위치(포인터)가 나옴">&</a><a href="#pointer.init.varName" class="variable">varName</a>;</div>
+            <div class="box">
+                <a href="#dataType" class="mark">특정 자료형</a>(여기에서는 <a href="#pointer.init.<>.T" class="generic">T</a>로 표기) 옆에 *를 붙이면 <a href="#pointer.init.<>.T" class="generic">T</a>형식의 자료를 저장할 수 있는 메모리 주소(<a href="#pointer" class="mark">포인터</a>)로써의 자료형을 뜻합니다. <br>
 
+                
+            </div>
+            <h4 id="pointer.init.varName"><a href="#dataType" class="generic" id="pointer.init.<>.T">T</a> <d class="variable">varName</d></h4>
+            <div class="box">
+                미리 <a href="#variable.declare" class="mark" title="변수가 미리 정의되어 있지 않으면 메모리도 할당되어 있지 않기 때문에 아예 넣을 수 없다.">정의</a>된 <a href="#pointer.init.<>.T" class="generic">T</a> 형식의 <a href="#pointer.init.varName" class="variable">varName</a>입니다. <br>
+
+                <a href="#variable" class="mark">변수</a>를 새로 <a href="#variable.declare" class="mark">정의</a>할 때에 <a href="#variable.declare" class="mark">정의된 변수</a>에 새로 메모리를 할당하는데, 그 메모리 주소를 <a href="#pointer" class="mark">포인터</a>라 부릅니다.
+            </div>
+        </div>
     </div>
 
     <h2 id="array">배열</h2>
     <div class="indent box">
         <h3 id="array.string" class="str">"문자열"</h3>
         <div class="box"></div>
+    </div>
+
+    <h2 id="struct">구조체</h2>
+    <div class="indent box">
+
     </div>
 
     <h2 id="function">함수</h2>
@@ -305,22 +379,24 @@ bool, char, short, int, long, long long...
 
     <h2 id="include" class="includeKey">#include</h2>
     <div class="indent box">
-        <div class="box">외부 라이브러리를 가져옵니다.</div>
+        <div class="box">외부 라이브러리에 저장된 요소를 가져와 사용할 수 있도록 합니다.</div>
 
         <h3 id="include.<>">&lt;&gt;</h3>
         <div class="indent box">
-            
+            시스템 헤더 파일, 즉 <a href="./header.html" class="mark">컴파일러와 함께 제공되는 헤더 파일</a>을 포함시킬 때 사용됩니다. <br>
+            이 경우 컴파일러는 시스템 헤더 파일을 저장하는 데 사용하는 기본 검색 경로에서 헤더를 찾아 옵니다.
         </div>
 
         <h3 id='include.""'>""</h3>
         <div class="indent box">
-
+            사용자 정의된 라이브러리, 즉 커스텀 헤더 파일을 포함시킬 때 사용됩니다. <br>
+            절대 경로, 혹은 상대 경로에 있는 정보를 읽어 옵니다. 
         </div>
     </div>
 
     <h2 id="lib">라이브러리</h2>
     <div class="indent box">
-        <a href="./header.html">기본 라이브러리</a>
+        <a href="./ccpp/header.html">기본 라이브러리</a>
     </div>
     <p class="indent" style="color:rgb(95, 95, 95); font-size: 10px;">© 2023. YuiSanae2f</p>
 </body>

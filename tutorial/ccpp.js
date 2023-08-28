@@ -35,11 +35,11 @@ function dataTypeCharFromChar() {
 
     let i = new String(_);
     exe.innerHTML = 
-    `당신이 입력한 값의 길이는 ${i.length}입니다. <br><br>`
+    `당신이 입력한 값의 길이는 <a href="#dataType.integer" class="generic">${i.length}</a>입니다. <br><br>`
     + (
-        i.length == 0 ? `당신은 공백을 입력하셨습니다. 공백문자는 '\\0'로써, 0의 값을 지닙니다.` : 
+        i.length == 0 ? `당신은 공백을 입력하셨습니다. 공백문자는 '\\0'로써, <a href="#dataType.integer">0</a>의 값을 지닙니다.` : 
         i.length == 1 ? 
-        (i.charCodeAt(0) >= 0 && i.charCodeAt(0) <= 127) ? `당신이 입력한 문자를 숫자로 바꾸면 ${i.charCodeAt(0)}입니다.` :
+        (i.charCodeAt(0) >= 0 && i.charCodeAt(0) <= 127) ? `당신이 입력한 문자를 숫자로 바꾸면 <a href="#dataType.integer" class="generic">${i.charCodeAt(0)}</a>입니다.` :
         `해당 문자는 ASCII값으로 나타낼 수 없습니다.`
         : `<a href="#dataType.char" class="reservedKey">char</a>는 문자 하나를 뜻합니다.<br>문자를 하나만 넣고 다시 시도해 봅시다.<br><br>문자 여러 개는 <a href="#array.string" class="str">"문자열"</a>을 참고하세요.`
     );
@@ -51,15 +51,15 @@ function dataTypeCharFromInt() {
 
     i = parseInt(_);
     exe.innerHTML = 
-    `당신이 입력한 숫자는 ${i}입니다. <br>` +
+    `` +
     (
-        isNaN(i) ? `숫자를 입력하지 않으셨으므로 0으로 간주하겠습니다. <br><br>0에 대응하는 문자는 공백 문자로, '\\0'을 뜻합니다.<br>이 문자는 아무 것도 없는 공백을 뜻합니다.`
+        isNaN(i) ? `숫자를 입력하지 않으셨으므로 <a href="#dataType.integer" class="generic">0</a>으로 간주하겠습니다. <br><br><a href="#dataType.integer" class="generic">0</a>에 대응하는 문자는 공백 문자로, '\\0'을 뜻합니다.<br>이 문자는 아무 것도 없는 공백을 뜻합니다.`
 
-        : `<br>` + (
+        : `당신이 입력한 숫자는 <a href="#dataType.integer" class="generic">${i}</a>입니다. <br><br>` + (
             i == 0 
-            ? `0에 대응하는 문자는 공백 문자로, '\\0'을 뜻합니다.<br>이 문자는 아무 것도 없는 공백을 뜻합니다.` 
-            : ( i >= 0 && i <= 127 ? `당신이 입력한 문자는 ${String.fromCharCode(i)}로써 치환될 수 있습니다.` 
-            : `당신이 입력한 문자는 <a href="#dataType.char" class="mark">아스키 코드</a>로써 치환될 수 없습니다. <a href="#dataType.char" class="mark">아스키 코드</a>는 0부터 127 사이의 숫자를 문자로써 치환하도록 만든 것입니다.`)
+            ? `<a href="#dataType.integer" class="generic">0</a>에 대응하는 문자는 공백 문자로, '\\0'을 뜻합니다.<br>이 문자는 아무 것도 없는 공백을 뜻합니다.` 
+            : ( i >= 0 && i <= 127 ? `당신이 입력한 문자는 <a href="#dataType.char" class="str">'${String.fromCharCode(i)}'</a>로써 치환될 수 있습니다.` 
+            : `당신이 입력한 문자는 <a href="#dataType.char" class="mark">아스키 코드</a>로써 치환될 수 없습니다. <a href="#dataType.char" class="mark">아스키 코드</a>는 <a href="#dataType.integer" class="generic">0</a>부터 <a href="#dataType.integer" class="generic">127</a> 사이의 숫자를 문자로써 치환하도록 만든 것입니다.`)
             )
     );
 }
