@@ -301,6 +301,76 @@ var strArr = {
         {
             ko: `백스페이스(backspace)를 뜻합니다.`,
             en: ``
+        },
+
+        {
+            ko: `Form Feed`,
+            en: `Form Feed`
+        },
+
+        {
+            ko: `주로 프린터나 출력 장치에서 페이지를 나누거나 다음 페이지로 이동하기 위해 쓰입니다.`,
+            en: ``
+        },
+
+        {
+            ko: `종종 문서를 여러 부분으로 나누는 데 사용되며, 출력 장치가 이를 감지할 때 페이지를 넘긴다 가정합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `하지만 현대 대부분의 텍스트 처리 시스템에서는 출력 장치에서 <a href="#\f.formFeed">Form Feed</a>를 무시하는 경우가 많으므로 특별한 동작을 유발하지 않을 수 있습니다.`,
+            en: ``
+        },
+
+        {
+            ko: `수직 탭을 의미하나 잘 사용되지 않습니다.`,
+            en: ``
+        },
+
+        {
+            ko: `본래 텍스트 출력에서 수직 방향으로 일정한 간격을 띄우기 위해 사용되는 제어 문자입니다.`,
+            en: ``
+        },
+
+        {
+            ko: `경고음`,
+            en: `bell`
+        },
+
+        {
+            ko: `문자열 안에 <a href="#\\a" class="str">'\\a'</a>를 넣을 경우 소리나 알림을 생성합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `그러나 현대의 대부분의 시스템에서는 <a href="#\\a" class="str">'\\a'</a>가 비활성화되어 있을 가능성이 높습니다.`,
+            en: ``
+        },
+
+        {
+            ko: `널 문자`,
+            en: ``
+        },
+
+        {
+            ko: `문자열의 끝을 구분합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `예를 들어, <a href="#array.string" class="str">"Hello World!"</a>는 <a href="#array">{</a> <a href="#dataType.char" class="str">'H'</a>, <a href="#dataType.char" class="str">'e'</a>, <a href="#dataType.char" class="str">'l'</a>, <a href="#dataType.char" class="str">'l'</a>, <a href="#dataType.char" class="str">'o'</a>, <a href="#dataType.char" class="str">' '</a>, <a href="#dataType.char" class="str">'W'</a>, <a href="#dataType.char" class="str">'o'</a>, <a href="#dataType.char" class="str">'r'</a>, <a href="#dataType.char" class="str">'l'</a>, <a href="#dataType.char" class="str">'d'</a>, <a href="#dataType.char" class="str">'!'</a>, <a href="#\\0" class="str">'\\0'</a> <a href="#array">}</a>의 구조를 가지고 있으며, <br> 여기에서 문장이 끝났다는 것을 명시하기 위하여 <a href="#\\0.null">널 문자</a>가 쓰입니다.`,
+
+            en: ``
+        },
+
+        {
+            ko: `특정한 16진수값을 직접 표현할 수 있는 문자입니다.`,
+            en: ``
+        },
+
+        {
+            
         }
     ]
 };
