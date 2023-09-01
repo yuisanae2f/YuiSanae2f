@@ -187,11 +187,11 @@
 
                     <a id="\ooo" class="str" href="#dataType.char">\ooo</a>
                     <div class="box">
-                        <div class="box">특정한 8진수값을 직접 표현할 수 있는 문자입니다.</div>
-                        <p>예제</p>
+                        <div class="box"><span></span></div>
+                        <p><span></span></p>
                         <div id="\ooo.console" class="box">
-                            <a href="array.string">문자열</a>: <input type="text" id="\ooo.console.string">
-                            <div class="button" onclick="ooo()">실행</div>
+                            <a href="array.string"><span></span></a>: <input type="text" id="\ooo.console.string"><br><br>
+                            <span class="button" onclick="ooo()"></span>
                             <div class="box" id="\ooo.console.exe"></div>
                         </div>
                     </div>
@@ -199,43 +199,38 @@
             </div>
     
             <h3 id="dataType.int" class="reservedKey">int</h3>
-            <div class="box">4byte의 크기를 가진 정수를 뜻합니다.</div>
+            <div class="box"><span></span></div>
         </div>
 
-        <h3 id="dataType.floatingPoint">부동 소수형</h3>
+        <h3 id="dataType.floatingPoint"><span></span></h3>
         <div class="box">
             <h3 id="dataType.float" class="reservedKey">float</h3>
-            <div class="box">4byte의 크기를 가진 부동 소수점을 뜻합니다.</div>
+            <div class="box"><span></span></div>
 
             <h3 id="dataType.double" class="reservedKey">double</h3>
-            <div class="box">8byte의 크기를 가진 부동 소수점을 뜻합니다.</div>
+            <div class="box"><span></span></div>
         </div>
     </div>
 
-    <h2 id="operator">연산자</h2>
+    <h2 id="operator"><span></span></h2>
     <div class="indent box">
-        <h3 id="operator.basic">사칙연산</h3>
+        <h3 id="operator.basic"><span></span></h3>
         <div class="box">
-            <div class="box"></div>
-            <p id="operator.basic.int"><a href="#dataType.int" class="reservedKey" title="정수 형태라고 한다.">int</a>일 경우</p>
+            <p id="operator.basic.int"><span></span></p>
             <div class="box">
-                <a href="#dataType.integer" class="mark" title="정수 자료형일 경우 int가 아니라도 무방하다는 말이다.">정수 자료형</a>으로 사칙연산자를 시도할 경우, 이들은 정수로 취급합니다. <br>
-
-                쉽게 말해, <a href="#dataType.integer" class="mark">여기</a>에 속해 있을 경우 어떤 형태든 간에 숫자로 간주된다는 것입니다.
-                <br><br>
-
-                이를테면, <a href="#dataType.bool" class="reservedKey" title="true가 1, false가 0이라는 말은 자주 들어 봐서 알 것이다.">bool</a>일 경우 <a href="#dataType.bool.false" class="generic">0</a> 혹은 <a href="#dataType.bool.true" class="generic">1</a>로 치환되거나 <br>
-                <a href="#dataType.char" title="아스키 코드를 참고하자." class="reservedKey">char</a>일 경우, 아스키 코드로 반환되거나 하는 방식입니다.
+                <span></span><br>
+                <span></span><br><br>
+                <span></span>
             </div>
 
             <h4 id="operator.basic.+">+</h4>
             <div class="box"></div>
 
             <h4 id="operator.basic.-">-</h4>
-            <div class="box">뺄셈 연산을 수행합니다.</div>
+            <div class="box"><span></span></div>
 
             <h4 id="operator.basic.*">*</h4>
-            <div class="box">곱셈 연산을 수행합니다.</div>
+            <div class="box"><span></span></div>
 
             <h4 id="operator.basic./">/</h4>
             <div class="box"></div>
@@ -244,32 +239,29 @@
             <div class="box"></div>
         </div>
 
-        <h3 id="operator.bit">비트 연산</h3>
+        <h3 id="operator.bit"><span></span></h3>
         <div class="box">
             <div class="box">
-                단위 비트 조작이 가능한 <a href="#dataType.integer" style="text-decoration:underline;" title="내가 다 적어 놓았는지 의문이 들어 여기에 추가로 적어 놓겠다.
-bool, char, short, int, long, long long...
-물론 앞에 unsigned를 붙인다고 해도 달라지는 것 없이 정상작동한다.">정수형 자료형</a>에서 사용할 수 있는 연산자입니다. <br>
-                
+                <span></span><br>
             </div>
 
             <h4 id="operator.bit.&">&</h4>
-            <div class="box">AND연산을 수행합니다.</div>
+            <div class="box"><span></span></div>
 
-            <h4 id="operator.bit.shift">시프트 연산자</h4>
+            <h4 id="operator.bit.shift"><span></span></h4>
             <div class="box">
                 <p id="operator.bit.>>">>></p>
                 <p id="operator.bit.<<"><<</p>
             </div>
         </div>
 
-        <h3 id="operator.assign">대입 연산</h3>
+        <h3 id="operator.assign"><span></span></h3>
         <div class="box">
             <h4 id="operator.assign.=">=</h4>
         </div>
 
         
-        <h3 id="operator.logic">논리연산</h3>
+        <h3 id="operator.logic"><span></span></h3>
         <div class="box">
             <div class="box">
                 
@@ -284,15 +276,13 @@ bool, char, short, int, long, long long...
                     <a href="#operator.logic.!">!</a><a href="#operator.logic.!.cond" class="variable">cond</a>
                 </div>
                 <p id="operator.logic.!.cond" class="variable"><a href="#dataType.bool" class="reservedKey">bool</a> cond</p>
-                <div class="box">
-                    <a href="#operator.logic.!" class="mark" title="그러니까 cond가 true였으면 false가 된다는 소리다.">구문의 값</a>은 본래 가지고 있던 값과 반대되는 값이 됩니다.
-                </div>
+                <div class="box"><span></span></div>
 
-                <p id="operator.logic.!.console">시연</p>
+                <p id="operator.logic.!.console"><span></span></p>
                 <div class="box">
                     <a href="#operator.logic.!.cond" class="variable">cond</a>: <input type="text" id="operator.logic.!.console.cond"><br>
-                    <div onclick="operatorLogicNOT()" class="button" title="눈치챘겠지만 이곳에서 실행될 떄 bool값은 0이나 false가 아닐 경우 전부 true로 받아들인다.
-이건 본인이 만든 문서에서 앞으로도 변하지 않을 유구한 전통이라 할 수 있다.">실행</div>
+                    <span onclick="operatorLogicNOT()" class="button" title="눈치챘겠지만 이곳에서 실행될 떄 bool값은 0이나 false가 아닐 경우 전부 true로 받아들인다.
+이건 본인이 만든 문서에서 앞으로도 변하지 않을 유구한 전통이라 할 수 있다."></span>
                     <div class="box" id="operator.logic.!.console.exe"></div>
                 </div>
             </div>
@@ -302,7 +292,7 @@ bool, char, short, int, long, long long...
                 
             </div>
 
-            <h4 id="operator.logic.?:">삼항연산자</h4>
+            <h4 id="operator.logic.?:"><span></span></h4>
             <div class="box">
                 <div class="box">
                     [ <a id="operator.logic.?:.<>.T" class="generic" href="#dataType" title="이곳에 T는 둘이 있다. 이 경우 두 T는 중복되어야 함을 뜻한다.">T</a> ]
@@ -310,36 +300,31 @@ bool, char, short, int, long, long long...
                 </div>
 
                 <p id="operator.logic.?:.cond" class="variable"><a href="#dataType.bool" class="reservedKey">bool</a> cond</p>
-                <div class="box">
-                    <a href="#operator.logic.?:" class="mark" title="그러니까 cond ? ifVal : elseVal을 말하는 것이다.">구문 전체</a>의 값을 결정할 조건문입니다.
-                </div>
+                <div class="box"><span></span></div>
 
                 <p id="operator.logic.?:.ifVal" class="variable"><a href="#operator.logic.?:.<>.T" class="generic" title="말인즉슨 ifVal에 int값을 넣고 elseVal에 char을 넣지 말라는 소리다.">T</a> ifVal</p>
-                <div class="box">
-                    만일 <a href="#operator.logic.?:.cond" class="variable">cond</a>가 참일 경우
-                    <a href="#operator.logic.?:" class="mark" title="cond ? ifVal : elseVal">구문 전체</a>는 <a href="#operator.logic.?:.ifVal" class="variable">ifVal</a>이 됩니다.
-                </div>
+                <div class="box"><span></span></div>
 
                 <p id="operator.logic.?:.elseVal" class="variable"><a href="#operator.logic.?:.<>.T" class="generic" title="...사실 둘 다 까고 보면 숫자값이니 상관은 없을지도.">T</a> elseVal</p>
-                <div class="box">그 이외의 경우 <a href="#operator.logic.?:" class="mark" title="...이해가 안 된다면 그냥 클릭해서 다시 보고 오는 것도 방법이다.">구문 전체</a>는 <a href="#operator.logic.?:.elseVal" class="variable">elseVal</a>이 됩니다.</div>
+                <div class="box"><span></span></div>
 
-                <p id="operator.logic.?:.console">시연</p>
+                <p id="operator.logic.?:.console"><span></span></p>
                 <div class="box">
                     <a href="#operator.logic.?:.cond" class="variable">cond</a>: <input type="text" id="operator.logic.?:.console.cond"><br>
                     <a href="#operator.logic.?:.ifVal" class="variable">ifVal</a>: <input type="text" id="operator.logic.?:.console.ifVal"><br>
                     <a href="#operator.logic.?:.elseVal" class="variable">elseVal</a>: <input type="text" id="operator.logic.?:.console.elseVal"><br>
 
-                    <div class="button" onclick="operatorLogicDreiVal()">실행</div>
+                    <div class="button" onclick="operatorLogicDreiVal()"><span></span></div>
                     <div class="box" id="operator.logic.?:.console.exe"></div>
                 </div>
             </div>
         </div>
 
-        <h3 id="operator.ref">참조 연산</h3>
+        <h3 id="operator.ref"><span></span></h3>
         <div class="box">
             <div class="box">
-                <a href="#variable" title="사실상 이걸 만들지 못한다면, 당신은 이걸 읽고 있어도 의미가 없다." class="mark">변수</a>와 <a href="#pointer" class="mark" title="변수라는 상자가 있으면 그 상자가 놓인 장소라고 하면 되겠다.">포인터</a>에 관련된 연산자입니다. <br>
-                대부분의 경우 <a href="#variable" title="진짜 이걸 모르겠다고?" class="mark">변수 이름</a> 혹은 <a href="#pointer" class="mark" title="대부분 포인터 관련 연산이기 때문에">포인터</a>와 관련된 연산을 수행하기 때문에 <a href="#variable" title="진심으로?" class="mark">변수</a>를 미리 정의해 놓은 것을 전제로 진행됩니다.
+                <span></span><br>
+                <span></span>
             </div>
 
             <h4 id="operator.ref.&">&</h4>
@@ -348,19 +333,15 @@ bool, char, short, int, long, long long...
                     [ <a class="generic" id="operator.ref.&.<>.T" href="#dataType" title="이쯤되면 학습할 때 되었다고 생각하긴 하는데, 일단 날리고 생각해 보기로 했다.">T</a><a href="#pointer.init" title="자료형 옆에 붙어 있으니 이 자료형의 포인터라는 뜻이다. T포인터라고 생각하면 편하다.">*</a> ]
                         &<a href="#operator.ref.&.var" class="variable">var</a>
                 </div>
-                <div class="box">
-                    정의되어 있는 변수인 <a href="#operator.ref.&.var" class="variable">var</a>의 위치(<a href="#pointer" class="mark" title="만능">포인터</a>)를 나타냅니다. <br>
-                </div>
+                <div class="box"><span></span></div>
                 <p class="variable" id="operator.ref.&.var"><a class="generic" href="#operator.ref.&.<>.T">T</a> var</p>
-                <div class="box">
-                    위치를 구할 변수의 이름입니다.
-                </div>
+                <div class="box"><span></span></div>
             </div>
 
             <h4 id="operator.ref.*">*</h4>
             <div class="box">
                 <div class="box">[ T ] *point</div>
-                <div class="box">정의된 포인터 point의 값을 참조합니다.</div>
+                <div class="box"></div>
                 <p>T* point</p>
                 <div class="box"></div>
             </div>
@@ -379,32 +360,31 @@ bool, char, short, int, long, long long...
         </div>
     </div>
 
-    <h2 id="pointer">포인터</h2>
+    <h2 id="pointer"><span></span></h2>
     <div class="indent box">
         <div class="box">
-            모든 <a href="#variable" class="mark">변수</a>는 정의된 순간 각자의 메모리를 할당받습니다. <br>
-            그 메모리의 위치 또한 자료형으로 쓰일 수 있으며, 이를 포인터라 부릅니다.
+            <span></span><br>
+            <span></span>
         </div>
-        <h3 id="pointer.init"><a href="#pointer">포인터</a> <a href="#variable.init">초기화</a></h3>
+        <h3 id="pointer.init"></h3>
         <div class="box">
+            <h4><span></span></h4>
             <div class="box"><a href="#pointer.init.<>.T" class="generic">T</a>* <a class="variable" href="#variable.init" title="기본적으로 포인터를 초기화하는 과정은 변수를 초기화하는 과정과 같으므로 ">varPoint</a> = <a href="#operator.ref.&" title="변수 이름 앞에 붙이면 변수의 위치(포인터)가 나옴">&</a><a href="#pointer.init.varName" class="variable">varName</a>;</div>
-            <div class="box">
-                <a href="#dataType" class="mark">특정 자료형</a>(여기에서는 <a href="#pointer.init.<>.T" class="generic">T</a>로 표기) 옆에 *를 붙이면 <a href="#pointer.init.<>.T" class="generic">T</a>형식의 자료를 저장할 수 있는 메모리 주소(<a href="#pointer" class="mark">포인터</a>)로써의 자료형을 뜻합니다. <br>
 
-                
+            <div class="box">
+                <span></span><br>
+                <span></span>
             </div>
             <h4 id="pointer.init.varName"><a href="#dataType" class="generic" id="pointer.init.<>.T">T</a> <d class="variable">varName</d></h4>
             <div class="box">
-                미리 <a href="#variable.declare" class="mark" title="변수가 미리 정의되어 있지 않으면 메모리도 할당되어 있지 않기 때문에 아예 넣을 수 없다.">정의</a>된 <a href="#pointer.init.<>.T" class="generic">T</a> 형식의 <a href="#pointer.init.varName" class="variable">varName</a>입니다. <br>
-
-                <a href="#variable" class="mark">변수</a>를 새로 <a href="#variable.declare" class="mark">정의</a>할 때에 <a href="#variable.declare" class="mark">정의된 변수</a>에 새로 메모리를 할당하는데, 그 메모리 주소를 <a href="#pointer" class="mark">포인터</a>라 부릅니다.
+                <span></span>
             </div>
         </div>
     </div>
 
-    <h2 id="array">배열</h2>
+    <h2 id="array"><span></span></h2>
     <div class="indent box">
-        <h3 id="array.string" class="str">"문자열"</h3>
+        <h3 id="array.string" class="str">"<span></span>"</h3>
         <div class="box"></div>
     </div>
 

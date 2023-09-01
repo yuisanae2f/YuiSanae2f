@@ -382,6 +382,232 @@ var strArr = {
         {
             ko: `실행`,
             en: ``
+        },
+
+        {
+            ko: `특정한 8진수값을 직접 표현할 수 있는 문자입니다.`,
+            en: ``
+        },
+
+        {
+            ko: `예제`,
+            en: ``
+        },
+
+        {
+            ko: `문자열`,
+            en: `string`
+        },
+
+        {
+            ko: `실행`,
+            en: `execute`
+        },
+
+        {
+            ko: `4byte의 크기를 가진 정수를 뜻합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `부동 소수형`,
+            en: ``
+        },
+
+        {
+            ko: `4byte의 크기를 가진 부동 소수점을 뜻합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `8byte의 크기를 가진 부동 소수점을 뜻합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `연산자`,
+            en: ``
+        },
+
+        {
+            ko: `사칙연산`,
+            en: ``
+        },
+
+        {
+            ko: `<a href="#dataType.int" class="reservedKey" title="정수 형태라고 한다.">int</a>일 경우`,
+            en: ``
+        },
+
+        {
+            ko: `<a href="#dataType.integer" class="mark" title="정수 자료형일 경우 int가 아니라도 무방하다는 말이다.">정수 자료형</a>으로 사칙연산자를 시도할 경우, 이들은 정수로 취급합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `쉽게 말해, <a href="#dataType.integer" class="mark">여기</a>에 속해 있을 경우 어떤 형태든 간에 숫자로 간주된다는 것입니다.`,
+            en: ``
+        },
+
+        {
+            ko: `이를테면, <a href="#dataType.bool" class="reservedKey" title="true가 1, false가 0이라는 말은 자주 들어 봐서 알 것이다.">bool</a>일 경우 <a href="#dataType.bool.false" class="generic">0</a> 혹은 <a href="#dataType.bool.true" class="generic">1</a>로 치환되거나 <br>
+            <a href="#dataType.char" title="아스키 코드를 참고하자." class="reservedKey">char</a>일 경우, 아스키 코드로 반환되거나 하는 방식입니다.`,
+            en: ``
+        },
+
+        {
+            ko: `뺄셈 연산을 수행합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `곱셈 연산을 수행합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `비트 연산`,
+            en: ``
+        },
+
+        {
+            ko: `단위 비트 조작이 가능한 <a href="#dataType.integer" style="text-decoration:underline;" title="내가 다 적어 놓았는지 의문이 들어 여기에\n추가로 적어 놓겠다.\nbool, char, short, int, long, long long...\n물론 앞에 unsigned를 붙인다고 해도 달라지는 것 없이 정상작동한다.">정수형 자료형</a>에서 사용할 수 있는 연산자입니다.`,
+            en: ``
+        },
+
+        {
+            ko: `AND연산을 수행합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `시프트 연산자`,
+            en: ``
+        },
+
+        {
+            ko: `대입 연산`,
+            en: ``
+        },
+
+        {
+            ko: `논리연산`,
+            en: ``
+        },
+
+        {
+            ko: `<a href="#operator.logic.!" class="mark" title="그러니까 cond가 true였으면 false가 된다는 소리다.">구문의 값</a>은 본래 가지고 있던 값과 반대되는 값이 됩니다.`,
+            en: ``
+        },
+
+        {
+            ko: `시연`,
+            en: ``
+        },
+
+        {
+            ko: `실행`,
+            en: ``
+        },
+
+        {
+            ko: `삼항연산자`,
+            en: `<a href="#operator.logic.?:" class="mark" title="그러니까 cond ? ifVal : elseVal을 말하는 것이다.">구문 전체</a>의 값을 결정할 조건문입니다.`
+        },
+
+        {
+            ko: `만일 <a href="#operator.logic.?:.cond" class="variable">cond</a>가 참일 경우 <a href="#operator.logic.?:" class="mark" title="cond ? ifVal : elseVal">구문 전체</a>는 <a href="#operator.logic.?:.ifVal" class="variable">ifVal</a>이 됩니다.`,
+            en: ``
+        },
+
+        {
+            ko: `그 이외의 경우 <a href="#operator.logic.?:" class="mark" title="...이해가 안 된다면 그냥 클릭해서 다시 보고 오는 것도 방법이다.">구문 전체</a>는 <a href="#operator.logic.?:.elseVal" class="variable">elseVal</a>이 됩니다.`,
+            en: ``
+        },
+
+        {
+            ko: `시연`,
+            en: ``
+        },
+
+        {
+            ko: `실행`,
+            en: `execute`
+        },
+
+        {
+            ko: `참조 연산`,
+            en: ``
+        },
+
+        {
+            ko: `<a href="#variable" title="사실상 이걸 만들지 못한다면, 당신은 이걸 읽고 있어도 의미가 없다." class="mark">변수</a>와 <a href="#pointer" class="mark" title="변수라는 상자가 있으면 그 상자가 놓인 장소라고 하면 되겠다.">포인터</a>에 관련된 연산자입니다.`,
+            en: ``
+        },
+
+        {
+            ko: `대부분의 경우 <a href="#variable" title="진짜 이걸 모르겠다고?" class="mark">변수 이름</a> 혹은 <a href="#pointer" class="mark" title="대부분 포인터 관련 연산이기 때문에">포인터</a>와 관련된 연산을 수행하기 때문에 <a href="#variable" title="진심으로?" class="mark">변수</a>를 미리 정의해 놓은 것을 전제로 진행됩니다.`,
+            en: ``
+        },
+        
+        {
+            ko: `정의되어 있는 변수인 <a href="#operator.ref.&.var" class="variable">var</a>의 위치(<a href="#pointer" class="mark" title="만능">포인터</a>)를 나타냅니다.`,
+            en: ``
+        },
+
+        {
+            ko: `위치를 구할 변수의 이름입니다.`,
+            en: ``
+        },
+
+        {
+            ko: `정의된 포인터 point의 값을 참조합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `포인터`,
+            en: ``
+        },
+
+        {
+            ko: `모든 <a href="#variable" class="mark">변수</a>는 정의된 순간 각자의 메모리를 할당받습니다.`,
+            en: ``
+        },
+
+        {
+            ko: `그 메모리의 위치 또한 자료형으로 쓰일 수 있으며, 이를 포인터라 부릅니다.`,
+            en: ``
+        },
+
+        {
+            ko: `<a href="#pointer">포인터</a> <a href="#variable.init">초기화</a>`,
+            en: ``
+        },
+
+        {
+            ko: `<a href="#dataType" class="mark">특정 자료형</a>(여기에서는 <a href="#pointer.init.<>.T" class="generic">T</a>로 표기) 옆에 *를 붙이면 <a href="#pointer.init.<>.T" class="generic">T</a>형식의 자료를 저장할 수 있는 메모리 주소(<a href="#pointer" class="mark">포인터</a>)로써의 자료형을 뜻합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `미리 <a href="#variable.declare" class="mark" title="변수가 미리 정의되어 있지 않으면 메모리도 할당되어 있지 않기 때문에 아예 넣을 수 없다.">정의</a>된 <a href="#pointer.init.<>.T" class="generic">T</a> 형식의 <a href="#pointer.init.varName" class="variable">varName</a>입니다.`,
+            en: ``
+        },
+
+        {
+            ko: `<a href="#variable" class="mark">변수</a>를 새로 <a href="#variable.declare" class="mark">정의</a>할 때에 <a href="#variable.declare" class="mark">정의된 변수</a>에 새로 메모리를 할당하는데, 그 메모리 주소를 <a href="#pointer" class="mark">포인터</a>라 부릅니다.`,
+            en: ``
+        },
+
+        {
+            ko: `배열`,
+            en: ``
+        },
+
+        {
+            ko: `문자열`,
+            en: `string`
         }
     ]
 };
