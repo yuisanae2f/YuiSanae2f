@@ -245,6 +245,26 @@ var strArr = {
         {
             ko: `문자열 내에서 특정한 의미를 가진 특수한 문자 조합을 나타내는 <a href="#dataType.char" class="str">'\\'</a>와 다른 문자로 이뤄진 문자열이나 컴파일러 내에서는 문자로 받아들입니다.`,
             en: `Specific command design with <a href="#dataType.char" class="str">'\\'</a> placed at first will be treated as a single character in compiler.`
+        },
+
+        {
+            ko: `<d class="str" title="기본적으로 \\는 명령을 할 것이다라는 의미라 이것 하나로는 문자열이 아니라 명령으로 인식되는 문제를 피하기 위함이다.">'\\'</d> 그 자체를 뜻합니다.`,
+            en: `It represents <d class="str" title="기본적으로 \\는 명령을 할 것이다라는 의미라 이것 하나로는 문자열이 아니라 명령으로 인식되는 문제를 피하기 위함이다.">'\\'</d> itself.`
+        },
+
+        {
+            ko: `문자 <d class="str">'\\'</d> 자체는 명령으로 쓰이므로 명령 이외에 <d class="str">'\\'</d>를 출력하기 위하여 만들어졌습니다.`,
+            en: `Since the character <d class="str">'\\'</d> is usually used as a prefix of the command, to display it we use it.`
+        },
+
+        {
+            ko: `문자 <d class="str">'"'</d>를 뜻합니다.`,
+            en: `It represents <d class="str">'"' itself</d>`
+        },
+
+        {
+            ko: `컴파일러가 <d class="str">'"'</d>를 <a href="#array.string" class="mark">문자열</a>의 시작이라는 명령으로 읽지 않고 <a href="#dataType.char">문자(<d class="reservedKey">char</d>)</a>로써 받아들이게 하기 위함입니다.`,
+            en: ``
         }
     ]
 };
