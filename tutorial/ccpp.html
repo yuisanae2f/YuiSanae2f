@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 <head>
     <meta content="text/html; charset=UTF-8">
     <title>C/C++</title>
@@ -9,6 +9,11 @@
 </head>
 <body>
     <h1><a href="../index.html#tutorial">yuisanae2f</a>.<a href="../tutorial.html#ccpp">tutorial</a>.ccpp</h1>
+    <h2 id="translate"><span></span></h2>
+    <div class="box indent">
+        <d onclick="_translate('ko')">한국어</d> <br>
+        <d onclick="_translate('en')">English</d> <br>
+    </div>
 
     <h2 id="helloWorld">Hello World!</h2>
     <div class="indent box">
@@ -35,15 +40,20 @@
         </div>
     </div>
 
-    <h2 id="variable">변수</h2>
+    <h2 id="variable"><span></span></h2>
     <div class="indent box">
-        <h3 id="variable.declare"><a href="#variable" title="바로 위에 있긴 한데...">변수</a> 선언</h3>
+        <h3 id="variable.declare"><span></span></h3>
         <div class="box">
-            <a id="variable.declare.<>.T" href="#dataType" class="generic" title="딱 잘라 말하기 어려워 임시로 지정한 자료형이므로 이걸 클릭한다면 당신을 자료형에 대한 설명으로 보낼 것이다.">T</a> <d class="variable" id="variable.declare.varName">varName</d>;<br>
-            <a href="#variable.declare.<>.T" class="generic" title="여러 형태의 자료를 저장할 수 있고, 이를 위해서는 자료형을 알아야 한다.">T</a>의 형태로 된 변수 <a href="#variable.declare.varName" class="variable" title="사실 메모리를 할당해서 varName이라는 이름을 붙여 주는 것이다.">varName</a>을 새로 만듭니다.
+            <div class="box">
+                <a id="variable.declare.<>.T" href="#dataType" class="generic" title="딱 잘라 말하기 어려워 임시로 지정한 자료형이므로 이걸 클릭한다면 당신을 자료형에 대한 설명으로 보낼 것이다.">T</a> <d class="variable" id="variable.declare.varName">varName</d>;<br>
+            </div>
+
+            <div class="box">
+                <span></span>
+            </div>
         </div>
 
-        <h3 id="variable.init">변수 초기화</h3>
+        <h3 id="variable.init"><span></span></h3>
         <div class="box">
             <div class="box">
                 <a id="variable.init.<>.T" href="#dataType" class="generic" title="딱 잘라 말하기 어려워 임시로 지정한 자료형이므로 이걸 클릭한다면 당신을 자료형에 대한 설명으로 보낼 것이다.">T</a> <d class="variable" id="variable.init.varName">varName</d> = <a href="#dataType" class="generic" title="딱 잘라 말하기 어려워 임시로 지정한 자료형이므로 이걸 클릭한다면 당신을 자료형에 대한 설명으로 보낼 것이다.">T</a>.<a href="#variable.init.<>.T.value">value</a>;
@@ -51,10 +61,7 @@
 
             <h4 id="variable.init.<>.T.value"><a href="#variable.init.<>.T" class="generic">T</a>.value</h4>
             <div class="box">
-                T의 형태를 가진 임의의 자료를 <a href="#variable.init.<>.T" class="generic">T</a>.<a href="#variable.init.<>.T.value">value</a> 명시했습니다. <br>
-                예를 들어 정수인 <a href="#dataType.int" class="reservedKey">int</a>의 경우에는 그 <a href="#variable.init.<>.T.value">value</a>를 <a href="#dataType.integer" class="generic">5</a>라 생각할 것입니다. <br><br>
-
-                이 경우 <a href="#dataType.integer" class="mark">정수 형태</a>인 <a href="#variable.init.<>.T.value.varName" class="variable">varName</a>을 <a href="#dataType.integer" class="generic">5</a>로 초기화시키는 방법은 아래와 같을 것입니다. <br><br>
+                <span></span><br> <span></span><br><br> <span></span><br><br>
                 <div class="box">
                     <a href="#dataType.int" class="reservedKey">int</a> <d class="variable" id="variable.init.<>.T.value.varName">varName</d> = <a href="#dataType.integer" class="generic">5</a>;
                 </div>
@@ -62,52 +69,52 @@
         </div>
     </div>
 
-    <h2 id="dataType">자료형</h2>
+    <h2 id="dataType"><span></span></h2>
     <div class="indent box">
-        <div class="box">자료의 형태를 미리 정의하는 방식입니다.</div>
+        <div class="box"><span></span></div>
 
         <h3 id="dataType.integer">정수형</h3>
         <div class="box">
             <h3 id="dataType.bool" class="reservedKey">bool</h3>
             <div class="box">
-                1bit의 크기를 가진 이진 정수를 뜻합니다. <br>
-                다른 정수값을 <a href="#dataType.bool" class="reservedKey">bool</a>로 바꿀 경우, <a href="#dataType.bool.false" class="generic">0</a>일 때 <a href="#dataType.bool.false" class="reservedKey">false</a>가 되며, 나머지 경우 전부 <a href="#dataType.bool.true" class="reservedKey">true</a>로 간주됩니다.
+                <span></span> <br>
+                <span></span>
                 <h4 id="dataType.bool.true" class="reservedKey">true</h4>
-                <div class="box">참값을 뜻하며, <a href="#dataType.bool.true" class="generic">1</a>의 값을 가집니다.</div>
+                <div class="box"><span></span></div>
     
                 <h4 id="dataType.bool.false" class="reservedKey">false</h4>
-                <div class="box">거짓값을 뜻하며, <a href="#dataType.bool.false" class="generic">0</a>의 값을 가집니다.</div>
+                <div class="box"><span></span></div>
             </div>
     
             <h3 id="dataType.char" class="reservedKey">char</h3>
             <div class="box">
                 <div class="box str">'A'</div>
                 <div class="box">
-                    <d title="1비트가 0과 1이고 그게 8개 있으면 byte이므로 2의 8제곱인 128이라 할 수 있다. 그것이 아스키 코드가 0부터 127까지밖에 표현하지 못하는 이유라 할 수 있겠다.">1byte</d>의 크기를 가진 <a href="#dataType.integer" class="mark">정수</a>를 아스키 형태의 문자로 표현한 것을 뜻합니다. <br>
-                    한 글자를 작은 따옴표로 감싸 아래와 같은 형태로 표현할 수 있습니다. <p></p>
+                    <span></span><br>
+                    <span></span> <p></p>
                     <div class="box"><a href="#dataType.char" class="reservedKey">char</a> <a href="#variable.init" class="variable">var</a> = <a href="#dataType.char" class="str">'A'</a></div>
 
-                    한 글자는 하나의 <a href="#dataType.integer" class="mark">숫자</a>에 치환되므로 <a href="#array.string" class="mark">여러 개의 문자</a>를 표현하기 위해서는 <a href="#array" class="mark">배열</a>을 사용할 필요가 있습니다.
+                    <span></span>
                 </div>
 
-                <h4 id="dataType.char.fromChar.console">문자는 정수가 됩니다.</h4>
+                <h4 id="dataType.char.fromChar.console"><span></span></h4>
                 <div class="box">
-                    문자: <input type="text" id="dataType.char.fromChar.console._"><br>
-                    <div class="button" onclick="dataTypeCharFromChar()">실행</div>
+                    <span></span>: <input type="text" id="dataType.char.fromChar.console._"><br>
+                    <span class="button" onclick="dataTypeCharFromChar()"></span>
                     <div class="box" id="dataType.char.fromChar.console.exe"></div>
                 </div>
 
-                <h4 id="dataType.char.fromInt.console">정수는 문자가 됩니다.</h4>
+                <h4 id="dataType.char.fromInt.console"><span></span></h4>
                 <div class="box">
-                    정수: <input type="number" id="dataType.char.fromInt.console._"><br>
-                    <div class="button" onclick="dataTypeCharFromInt()">실행</div>
+                    <span></span>: <input type="number" id="dataType.char.fromInt.console._"><br>
+                    <span class="button" onclick="dataTypeCharFromInt()"></span>
                     <div class="box" id="dataType.char.fromInt.console.exe"></div>
                 </div>
 
-                <h4 id="\">이스케이프 시퀀스</h4>
+                <h4 id="\"><span></span></h4>
                 <div class="box">
                     <div class="box">
-                        문자열 내에서 특정한 의미를 가진 특수한 문자 조합을 나타내는 <a href="#dataType.char" class="str">'\'</a>와 다른 문자로 이뤄진 문자열이나 컴파일러 내에서는 문자로 받아들입니다.
+                        <span></span>
                     </div>
                     <a id="\\" class="str" href="#dataType.char">\\</a>
                     <div class="box">
@@ -484,4 +491,5 @@ bool, char, short, int, long, long long...
     </div>
     <p class="indent" style="color:rgb(95, 95, 95); font-size: 10px;">© 2023. YuiSanae2f</p>
 </body>
+<script>_translate("ko");</script>
 </html>
