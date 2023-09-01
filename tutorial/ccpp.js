@@ -265,6 +265,42 @@ var strArr = {
         {
             ko: `컴파일러가 <d class="str">'"'</d>를 <a href="#array.string" class="mark">문자열</a>의 시작이라는 명령으로 읽지 않고 <a href="#dataType.char">문자(<d class="reservedKey">char</d>)</a>로써 받아들이게 하기 위함입니다.`,
             en: ``
+        },
+
+        {
+            ko: `문자 <d class="str">'''</d>를 뜻합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `컴파일러가 <d class="str">'"'</d>를 <a href="#dataType.char" class="mark">문자</a>의 시작이라는 명령으로 읽지 않고 <a href="#dataType.char">문자(<d class="reservedKey">char</d>)</a>로써 받아들이게 하기 위함입니다. `,
+
+            en: ``
+        },
+
+        {
+            ko: `줄넘김을 뜻합니다.`,
+            en: ``
+        },
+
+        {
+            ko: `탭(tab)을 뜻합니다.`,
+            en: ``
+        },
+
+        {
+           ko: `문자열 내에서 커서를 처음으로 돌려보냅니다.`,
+           en: ``
+        },
+
+        {
+            ko: `예를 들어 <a href="#array.string" class="str">"a\\rb"</a>는 a후에 앞으로 돌아가 b를 출력하므로 b가 a를 덮어쓰는 효과가 있습니다.`,
+            en: ``
+        },
+
+        {
+            ko: `백스페이스(backspace)를 뜻합니다.`,
+            en: ``
         }
     ]
 };
