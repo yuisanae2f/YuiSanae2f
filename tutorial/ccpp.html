@@ -16,27 +16,32 @@
     </div>
 
     <h2 id="helloWorld">Hello World!</h2>
-    <div class="indent box">
-        <pre></pre>
-        <h3 id="helloWorld.c">C</h3>
+    <div class="indent box" style="display: flex; gap: 1.25%">
+        <div style="width: 100%;">
+            <h3 id="helloWorld.c" class="indent">C</h3>
         <div class="box">
             <pre>
 <a href="#include" class="includeKey" title="외부 라이브러리를 들고 오는 방법이다.">#include</a> <a href="./ccpp/h/stdio.html" class="str" title="실행할 수 있는 함수를 모아둘 수 있는 또 다른 확장자명, 헤더이다. standard input output을 줄여 stdio라는 설이 있다.">&lt;stdio.h&gt;</a>
 <a href="#dataType.int" class="reservedKey" title="설마 void로 바꾸고 싶은 건 아니겠죠?">int</a> <a href="#function.main" class="function">main</a>() {
     <a href="" class="function" title='사실 printf는 서식 지정자로 작동하기 때문에, printf("%d", "Hello World!");가 맞는 구문이라고 할 수 있겠다.'>printf</a>(<a href="#array.string" class="str" title="C언어의 창시자가 처음 언어를 실행시킬 때 테스트로 'Hello World!'를 출력시킨 사실을 뿌리로 이 문자열은 대부분의 테스트에서 출력으로 쓰이는 영광스러운 자리를 안게 되었다는 전설이 있다.">"Hello World!"</a>);
     <a href="#function.return" class="logic" title="함수를 끝내고 값을 반환할 때 return이라는 키워드를 쓰는데, 이후 함수 그 자체의 값은 반환값이 되는 것이다.">return</a> <a href="#dataType.bool" class="generic" title="전통적으로 main함수는 0을 적는 것으로써 어플리케이션에 오류가 없음을 명시한다.">0</a>;
-}</pre>
+}
+
+</pre>
+        </div>
         </div>
 
-        <h3 id="helloWorld.cpp">C++</h3>
-        <div class="box">
-            <pre>
+        <div style="width: 100%;">
+            <h3 id="helloWorld.cpp">C++</h3>
+            <div class="box">
+                <pre>
 <a href="#include" class="includeKey" title="...위에서 설명했다고 생각했는데.">#include</a> <a href="./ccpp/lib/iostream.html" class="str" title="어딘가에서는 iostream.h라고 쓰기도 한다고 한다. 인도에 있는 누님께 배웠는데, 그 이유는 둘 다 몰랐다고 한다.">&lt;iostream&gt;</a>
 <a href="#dataType.int" class="reservedKey" title="...왜 그러는 거죠?">int</a> <a href="#function.main" class="function">main</a>() {
     std<a href="#operator.ref.::" title="아아, 이것은 네임스페이스 참조라는 것이다. using문을 통해 생략할 수 있지.">::</a>cout <a href="#operator.bit.<<" title="C++에서는 꽤나 생소한 비트 시프트 연산이 나온다.">&lt;&lt;</a> <a href="#array.string" class="str" title="하지만 요새는 Hello 이후에 프로그래밍 언어를 넣는 경우도 있다고 한다.">"Hello World!"</a>;
     <a href="#function.return" class="logic" title="덤으로 이 코드에서 사용된 0의 의미를 간략히 설명하자면, 오류가 없다는 뜻이 되겠다.">return</a> <a href="#dataType.bool" class="generic" title="따라서 이 경우 0 이외에는 오류가 있다는 것으로 확인, 그 경우 반환값을 오류 코드로 읽는다.">0</a>;
 }
-            </pre>
+                </pre>
+            </div>
         </div>
     </div>
 
