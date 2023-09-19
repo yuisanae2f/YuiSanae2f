@@ -49,29 +49,79 @@ strArr = [
 
     {
         id: "allocation.static",
-        ko: "정적 할당",
-        en: "Static Allocation"
+        ko: "정적 <a href='#allocation'>할당</a>",
+        en: "Static <a href='#allocation'>Allocation</a>"
     },
 
     {
-        id: "allocation.static[0]"
+        id: "allocation.static[0]",
+        ko: "프로그램을 실행하기 전에 먼저 <a href='#allocation'>할당</a>한다.",
+        en: "means <a href='#allocation'>allocating</a> before programme execution."
+    },
+
+    {
+        id: "allocation.static[1]",
+        ko: "각자 수명을 가지며 수명이 끝난 이후 자동으로 폐기된다.",
+        en: "will be automatically discarded after their given lifespan."
     },
 
     {
         id: "allocation.dynamic",
-        ko: "동적 할당",
-        en: "Dynamic Allocation"
+        ko: "동적 <a href='#allocation'>할당</a>",
+        en: "Dynamic <a href='#allocation'>Allocation</a>"
+    },
+
+    {
+        id: "allocation.dynamic[0]",
+        ko: "프로그램 실행 도중(런타임)에 <a href='#allocation'>할당</a>하는 것을 의미한다.",
+        en: "means <a href='#allocation'>allocating</a> while on runtime."
+    },
+
+    {
+        id: "allocation.dynamic[1]",
+        ko: "이 경우 <a href='#disposal'>메모리의 해제</a>는 자동으로 이루어지지 않는다. (따라서 명시적으로 <a href='#disposal'>해제</a>할 필요가 있다.)",
+        en: "will not <a href='#disposal'>dispose</a> the memory automatically. (which means that it must be <a href='#disposal'>disposed</a>)"
+    },
+
+    {
+        id: "disposal",
+        ko: "해제",
+        en: "Memory Disposal"
+    },
+
+    {
+        id: "disposal[0]",
+        ko: "<a href='#allocation'>할당</a> 이후에는 무조건 메모리의 헤제가 필요하다.",
+        en: "must be after <a href='#allocation'>allocation</a>."
+    },
+
+    {
+        id: "disposal[1]",
+        ko: "정적 할당일 경우 정해진 수명 이후 자동으로 수행된다.",
+        en: "will be automatically operated after <a href=\"#lifeSpan\">the scope</a> passed."
+    },
+
+    {
+        id: "disposal[2]",
+        ko: "",
+        en: ""
     },
 
     {
         id: "lifeSpan",
         ko: "수명",
-        en: "Life Span"
+        en: "Scope"
     },
 
     {
         id: "lifeSpan[0]",
-        ko: "변수가 할당되고부터 파괴될 때까지를 변수의 수명이라 한다.",
-        en: "is a span between the allocation and disposal of the variable."
+        ko: "<a href='#allocation.static'>정적으로 할당된</a> 변수가 <a href='#allocation'>할당</a>되고부터 <a href='#disposal'>파괴</a>될 때까지를 변수의 수명이라 한다.",
+        en: "is a span between <a href='#allocation'>the allocation</a> and <a href='#disposal'>disposal</a> of the variable which is <a href='#allocation.static'>statically allocated</a>."
+    },
+
+    {
+        id: "lifeSpan[1]",
+        ko: "변수가 <a href='#allocation.static'>정적으로 할당될</a> 시에 자동으로 가지게 된다.",
+        en: "is given automatically when a variable is once <a href='#allocation.static'>allocated statically</a>."
     }
 ];
