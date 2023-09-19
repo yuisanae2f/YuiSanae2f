@@ -7,6 +7,7 @@ function _translate(code) {
     langCode = code;
 
     const aEl = document.getElementsByTagName('a');
+    const srcEl = document.getElementsByTagName('iframe');
 
     document.getElementsByTagName("html")[0].lang = code;
     for (let i = 0; i < strArr.length; i++) {
@@ -36,6 +37,29 @@ function _translate(code) {
         // url = pro0.split('?')[0] + `?lang=${code}${arr[1] === undefined ? '' : '#' + arr[1]}`;
         url = pro0.split('?')[0] + prmString + (arr[1] === undefined ? '' : '#' + arr[1]);
         aEl[i].href = url;
+    }
+
+    for (let i = 0; i < srcEl.length; i++) {
+        const currentURL = srcEl[i].src;
+        const arr = currentURL.split('#');
+
+        const pro0 = arr[0];
+
+        let params = getURLParams(pro0);
+        prmString = "?";
+
+        let hasLang = false
+        for(let i = 0; i < params.length; i++) {
+            hasLang = params[i].name == "lang";
+            if(hasLang) params[i].value = code;
+            prmString += `${params[i].name}=${params[i].value}${params.length - 1 != i ? "&" : ""}`;
+        }
+
+        if(!hasLang) prmString += `&lang=${code}`;
+
+        // url = pro0.split('?')[0] + `?lang=${code}${arr[1] === undefined ? '' : '#' + arr[1]}`;
+        url = pro0.split('?')[0] + prmString + (arr[1] === undefined ? '' : '#' + arr[1]);
+        srcEl[i].src = url;
     }
 }
 
@@ -82,4 +106,21 @@ function _init() {
     _translate(langCode);
 }
 
+function _tent(word, count) {
+    hasWord = false;
+    for(let i of getURLParams()) {
+        if(i.name == word) {
+            hasTentRoot = true;
+            document.getElementById(word).innerHTML +=
+            `<h2 id="${word}.title">${i.value}</h2>`;
+
+            for(let j = 0; j < count; j++) {
+                document.getElementById(word).innerHTML +=
+                `<div class="indent box" id="${word}[${j}]"></div>`;
+            }
+        }
+    }
+
+    return hasWord;
+}
 // © 2023. YuiSanae2f

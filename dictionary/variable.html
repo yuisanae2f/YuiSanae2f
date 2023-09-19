@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../global.css">
+    <script src="./variable.js"></script>
+</head>
+<body>
+    <h1><a href="../index.html#dictionary">yuisanae2f</a>.<a href="../dictionary.html">dictionary</a>.<span>variable</span></h1>
+    <div id="_t"></div>
+    <div id="_te"></div>
+    <h2 id="summary"></h2>
+    <div class="box indent" id="summary[0]"></div>
+
+    <h2 id="allocation"></h2>
+    <div class="box indent" id="allocation[0]"></div>
+    <div class="box indent" id="allocation[1]"></div>
+    <div class="box indent">
+        <h3 id="allocation.static"></h3>
+        <div class="box" id="allocation.static[0]"></div>
+    </div>
+    <div class="box indent">
+        <h3 id="allocation.dynamic"></h3>
+    </div>
+
+    <h2 id="lifeSpan"></h2>
+    <div class="box indent" id="lifeSpan[0]"></div>
+</body>
+<script src="../global.js"></script>
+<script>
+    if(_tent("_te", 1)) document.getElementById("_te.title").classList.add("variable");
+    _init();
+</script>
+</html>

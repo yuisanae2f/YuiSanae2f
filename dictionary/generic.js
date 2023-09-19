@@ -15,7 +15,7 @@ strArr = [
 
     {
         id: "summary[0]",
-        ko: "하나의 클래스나 함수에서 다양한 <a href='./dataType.html>자료형</a> <a href='?_te=T#_te' class='generic'>T</a>를 사용할 수 있도록 한다.",
+        ko: "하나의 클래스나 함수에서 다양한 <a href='./dataType.html'>자료형</a> <a href='?_te=T#_te' class='generic'>T</a>를 사용할 수 있도록 한다.",
         en: "allows single class (or function) to have a various <a href='./dataType.html'>Data Type</a> <a href='?_te=T#_te' class='generic'>T</a>."
     }
 ];

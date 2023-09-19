@@ -17,13 +17,8 @@
 </body>
 <script src="../global.js"></script>
 <script>
-    for(let i of getURLParams()) {
-        if(i.name == "_te") {
-            document.getElementById("_te").innerHTML +=
-            `<h2 id="_te.title" class="generic">${i.value}</h2>` + 
-            '<div class="indent box" id="_te[0]"></div>'
-        }
-    }
+    _tent("_te", 1);
+    document.getElementById("_te.title").classList.add("generic")
     _init();
 </script>
 </html>

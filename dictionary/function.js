@@ -18,7 +18,7 @@ strArr = [
     {
         id: "return[0]",
         ko: "함수의 마침표이자 값을 반환하라는 표시이다.",
-        en: "represents the end of its operation, and its return of the value."
+        en: "represents the end of its operation, and also its return of the value."
     },
 
     {
