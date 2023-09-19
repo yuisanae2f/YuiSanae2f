@@ -16,11 +16,8 @@ const strArr = [
 
     {
         id: "common[0]",
-        ko: 
-        "통상적으로 사용되는 자료형에는 여러 형태가 있습니다. <br>"
-        + "아래에는 대표적으로 사용되는 자료형을 열거해 두었습니다.",
-        en: 
-        ""
+        ko: "여러 언어들 및 대부분의 경우에 통상적으로 사용된다.",
+        en: "is used in many languages and in most cases."
     },
 
     {
@@ -39,14 +36,38 @@ const strArr = [
     }, // Memory
 
     {
-        id: "summary[0]",
-        ko: "컴퓨터는 2진수로 데이터를 보관하므로 자료를 읽고 쓰는 방법을 정해 줄 필요가 있습니다.",
-        en: ""
+        id: "memory[0]",
+        ko: "직접 찾아갈 수 있는 주소의 형태를 가진다.",
+        en: "is formed as an address accessible."
     },
 
     {
-        id: "summary[1]",
-        ko: "자료형은 컴퓨터가 자료의 형태를 읽고 쓰는 방법을 알려 주는 여러 가지 방식입니다.",
-        en: ""
+        id: "summary",
+        ko: "자료형",
+        en: "Data Type"
+    },
+
+    {
+        id: "summary[0]",
+        ko: "컴퓨터가 이해할 수 있는 데이터를 만들기 위한 것이다.",
+        en: "is to make data the one that may be identified by computers."
+    },
+
+    {
+        id: "pointer",
+        ko: "포인터",
+        en: "Pointer"
+    },
+
+    {
+        id: "object",
+        ko: "객체",
+        en: "Object"
+    },
+
+    {
+        id: "object[0]",
+        ko: "여러 자료형을 묶어 새로운 이름을 붙일 수 있도록 한다.",
+        en: "is to group many data and give it a new name"
     }
 ]

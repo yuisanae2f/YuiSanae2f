@@ -10,7 +10,20 @@
 <body>
     <h1><a href="../index.html#dictionary">yuisanae2f</a>.<a href="../dictionary.html#generic">dictionary</a>.generic</h1>
     <div id="_t"></div>
+    <div id="_te"></div>
+
+    <h2 id="summary"></h2>
+    <div class="box indent" id="summary[0]"></div>
 </body>
 <script src="../global.js"></script>
-<script>_init();</script>
+<script>
+    for(let i of getURLParams()) {
+        if(i.name == "_te") {
+            document.getElementById("_te").innerHTML +=
+            `<h2 id="_te.title" class="generic">${i.value}</h2>` + 
+            '<div class="indent box" id="_te[0]"></div>'
+        }
+    }
+    _init();
+</script>
 </html>

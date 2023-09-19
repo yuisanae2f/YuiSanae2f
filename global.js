@@ -10,14 +10,31 @@ function _translate(code) {
 
     document.getElementsByTagName("html")[0].lang = code;
     for (let i = 0; i < strArr.length; i++) {
-        document.getElementById(strArr[i].id).innerHTML = strArr[i][code];
+        let el = document.getElementById(strArr[i].id);
+        if (el === null) continue;
+        el.innerHTML = strArr[i][code];
     }
 
     for (let i = 0; i < aEl.length; i++) {
         const currentURL = aEl[i].href;
-        const arr = currentURL.split('#'); // 쿼리 문자열 시작 위치 찾
+        const arr = currentURL.split('#');
+
         const pro0 = arr[0];
-        url = pro0.split('?')[0] + `?lang=${code}${arr[1] === undefined ? '' : '#' + arr[1]}`;
+
+        let params = getURLParams(pro0);
+        prmString = "?";
+
+        let hasLang = false
+        for(let i = 0; i < params.length; i++) {
+            hasLang = params[i].name == "lang";
+            if(hasLang) params[i].value = code;
+            prmString += `${params[i].name}=${params[i].value}${params.length - 1 != i ? "&" : ""}`;
+        }
+
+        if(!hasLang) prmString += `&lang=${code}`;
+
+        // url = pro0.split('?')[0] + `?lang=${code}${arr[1] === undefined ? '' : '#' + arr[1]}`;
+        url = pro0.split('?')[0] + prmString + (arr[1] === undefined ? '' : '#' + arr[1]);
         aEl[i].href = url;
     }
 }
@@ -26,17 +43,36 @@ function endl(count = 1) {
     return '\n'.repeat(count);
 }
 
-// var langCode;
-
-function _init() {
-    // 주어진 URL 문자열
-    const urlString = window.location.href.toString();
-    const browserLang = (navigator.language || navigator.userLanguage).split("-")[0];
+function getURLParams(urlString) {
+    if(urlString === null || urlString === undefined) 
+    urlString = window.location.href.toString();
 
     // "q" 매개변수의 값을 가져오기
     let langCode0 = urlString.split('?')[1];
-    let langCode1 = langCode0 === undefined ? browserLang : langCode0.split('=')[1];
-    let langCode = langCode1 === undefined ? browserLang : langCode1.split('#')[0];
+    let langCode1 = langCode0 === undefined ? undefined : langCode0.split('#')[0];
+    let langCode = langCode1 === undefined ? undefined : langCode1.split("&");
+
+    if(langCode === undefined) return [];
+    let param = [];
+
+    for(let str of langCode) {
+        if(str.split('=').length != 2) continue;
+        param.push({name: str.split('=')[0], value: str.split('=')[1]});
+    }
+
+    return param;
+}
+
+function _init() {
+    const browserLang = (navigator.language || navigator.userLanguage).split("-")[0];
+
+    params = getURLParams();
+
+
+    langCode = null;
+    for(let i of params) {
+        if(i.name == "lang") langCode = i.value;
+    }
 
     langCode = langCode === null ? browserLang : langCode;
 
