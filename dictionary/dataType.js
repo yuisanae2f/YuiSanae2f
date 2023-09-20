@@ -68,6 +68,18 @@ const strArr = [
     {
         id: "object[0]",
         ko: "여러 자료형을 묶어 새로운 이름을 붙일 수 있도록 한다.",
-        en: "is to group many data and give it a new name"
+        en: "is to group many data and give it a new name."
+    },
+
+    {
+        id: "struct[0]",
+        ko: "(구조체)",
+        en: ""
+    },
+
+    {
+        id: "class[0]",
+        ko: "(클래스)",
+        en: ""
     }
 ]

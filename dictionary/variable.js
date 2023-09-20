@@ -37,13 +37,13 @@ strArr = [
 
     {
         id: "allocation[0]",
-        ko: "값을 실제로 메모리에 <a href='#allocation'>할당</a>하는 과정이다.",
-        en: "is the actual process to allocate to memory."
+        ko: "값을 실제로 <a href='./pointer.html'>메모리에</a> <a href='#allocation'>할당</a>하는 과정이다.",
+        en: "is the actual process to allocate to <a href='./pointer.html'>memory</a>."
     },
 
     {
         id: "allocation[1]",
-        ko: "보통의 경우 메모리에 <a href='#allocation'>할당</a>한 이후 연산을 진행하므로 <a href='#allocation.static'>정적 할당</a>을 사용하는 것이 일반적이다.",
+        ko: "보통의 경우 <a href='./pointer.html'>메모리에</a> <a href='#allocation'>할당</a>한 이후 연산을 진행하므로 <a href='#allocation.static'>정적 할당</a>을 사용하는 것이 일반적이다.",
         en: "Since the operation performs after the allocation in normal cases, <a href='#allocation.static'>static allocation</a> is the common option."
     },
 
@@ -61,8 +61,8 @@ strArr = [
 
     {
         id: "allocation.static[1]",
-        ko: "각자 수명을 가지며 수명이 끝난 이후 자동으로 폐기된다.",
-        en: "will be automatically discarded after their given lifespan."
+        ko: "각자 <a href='#lifeSpan'>수명</a>을 가지며 <a href='#lifeSpan'>수명</a>이 끝난 이후 자동으로 <a href='#disposal'>폐기된다</a>.",
+        en: "will be automatically <a href='#disposal'>discarded</a> after their given <a href='#lifeSpan'>lifespan</a>."
     },
 
     {
@@ -92,19 +92,19 @@ strArr = [
     {
         id: "disposal[0]",
         ko: "<a href='#allocation'>할당</a> 이후에는 무조건 메모리의 헤제가 필요하다.",
-        en: "must be after <a href='#allocation'>allocation</a>."
+        en: "must be paired with the <a href='#allocation'>allocation</a>."
     },
 
     {
         id: "disposal[1]",
-        ko: "정적 할당일 경우 정해진 수명 이후 자동으로 수행된다.",
-        en: "will be automatically operated after <a href=\"#lifeSpan\">the scope</a> passed."
+        ko: "<a href=\"#allocation.static\">정적 할당</a>일 경우 <a href=\"#lifeSpan\">정해진 수명</a> 이후 자동으로 수행된다.",
+        en: "will be automatically operated once <a href=\"#lifeSpan\">the scope</a> has passed."
     },
 
     {
         id: "disposal[2]",
-        ko: "",
-        en: ""
+        ko: "<a href=\"#allocation.dynamic\">수명의 개념이 없는 동적 할당</a>일 경우 <a href=\"#lifeSpan\">정해진 수명</a>이 없으므로 직접 <a href='#disposal'>파괴</a>할 필요가 있다.",
+        en: "<a href=\"#allocation.dynamic\">Provided the one has no scope</a>, it needs to be <a href='#disposal'>discarded</a> explicitly."
     },
 
     {
@@ -122,6 +122,6 @@ strArr = [
     {
         id: "lifeSpan[1]",
         ko: "변수가 <a href='#allocation.static'>정적으로 할당될</a> 시에 자동으로 가지게 된다.",
-        en: "is given automatically when a variable is once <a href='#allocation.static'>allocated statically</a>."
+        en: "is given automatically once a variable is <a href='#allocation.static'>allocated statically</a>."
     }
 ];

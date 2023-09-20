@@ -80,8 +80,7 @@ function getURLParams(urlString) {
     let param = [];
 
     for(let str of langCode) {
-        if(str.split('=').length != 2) continue;
-        param.push({name: str.split('=')[0], value: str.split('=')[1]});
+        param.push(str.split('=').length == 2 ? {name: str.split('=')[0], value: str.split('=')[1]} : {name: str, value: str});
     }
 
     return param;
@@ -120,7 +119,6 @@ function _tent(word, count) {
             }
         }
     }
-
     return hasWord;
 }
 // © 2023. YuiSanae2f
