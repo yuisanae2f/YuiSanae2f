@@ -16,6 +16,7 @@
 <script>
     c = ConsoleController.Console("_name", []);
     c.params.push(ConsoleController.Param("_name", "input", "text"));
-    c.set(); GlobalController.init(false); 
+    c.set(); GlobalController.init(false);
+    document.getElementById(c.exeID()).onclick = fromChar;
 </script>
 </html>
