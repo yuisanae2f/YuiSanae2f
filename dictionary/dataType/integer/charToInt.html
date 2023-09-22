@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="consoleBox">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../global.css">
+    <script src="./charToInt.js"></script>
+    <title></title>
+</head>
+<body>
+    <div id="_t"></div>
+    <div id="_name"></div>
+</body>
+<script src="../../../Console.js"></script>
+<script src="../../../Global.js"></script>
+<script>
+    c = ConsoleController.Console("_name", []);
+    c.params.push(ConsoleController.Param("_name", "input", "text"));
+    c.set(); GlobalController.init(false); 
+</script>
+</html>

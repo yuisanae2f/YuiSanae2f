@@ -14,6 +14,17 @@ function dataTypeCharFromChar() {
     );
 }
 
+/// 글자 하나 쳐넣으면 ASCII 코드 줄 거임
 function fromChar(_) {
-    return _.charCodeAt(0);
+    switch(_.length) {
+        case 0: return 0;
+        case 1: return _.charCodeAt(0);
+        default: return -1;
+    }
 }
+
+strArr = [
+    {id: "title._name", ko: "콘솔", en: "Console"},
+    {id: "translate", ko: "언어", en: "Languages"},
+    {id: "exe._name", ko: "실행", en: "Run"}
+];

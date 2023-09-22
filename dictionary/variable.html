@@ -38,9 +38,10 @@
     <div class="box indent" id="disposal[1]"></div>
     <div class="box indent" id="disposal[2]"></div>
 </body>
-<script src="../global.js"></script>
+<script src="../Global.js"></script>
+<script src="../Tent.js"></script>
 <script>
-    if(_tent("_te", 1)) document.getElementById("_te.title").classList.add("variable");
-    _init();
+    if(TentController.createTent("_te", 1)) document.getElementById("_te.title").classList.add("variable");
+    GlobalController.init();
 </script>
 </html>

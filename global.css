@@ -67,6 +67,8 @@ a {
     background-color: rgba(100, 100, 100, 0.1);
 }
 
+.consoleBox { background-color: rgba(23, 23, 23); }
+
 h2 {
     margin-left: 10px;
     padding-left: 10px;
