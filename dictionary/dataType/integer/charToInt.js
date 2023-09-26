@@ -11,7 +11,7 @@ function fromChar() {
     a = document.getElementById(c.id(c.params[0])).value;
     b = document.getElementById(c.displayID());
     _fromChar(a)
-    b.innerHTML = `<div class="box indent" id="${}"></div>`;
+    b.innerHTML = `<div class="box indent" id="display._name[0]"></div>`;
 }
 
 

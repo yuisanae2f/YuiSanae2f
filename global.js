@@ -93,7 +93,8 @@ GlobalController = {
         langCode = langCode === null ? browserLang : langCode;
     
         document.write('<p class="indent" style="color:rgb(95, 95, 95); font-size: 10px;">© 2023. YuiSanae2f</p>');
-        if(_t) document.getElementById("_t").innerHTML = `<h2 id="translate"></h2><div class="box indent"><d onclick="GlobalController.translate('ko')">한국어</d><br><d onclick="GlobalController.translate('en')">English</d><br></div>`;
+        if(_t) document.getElementById("_t").innerHTML = 
+        `<h2 id="translate"></h2><div class="box indent"><d onclick="GlobalController.translate('ko')">한국어</d><br><d onclick="GlobalController.translate('en')">English</d><br></div>`;
     
         this.translate(langCode);
     },
