@@ -10,7 +10,13 @@
 <body>
     <h1><a href="../../../index.html#dictionary">yuisanae2f</a>.<a href="../../../dictionary.html#pointer">dictionary</a>.<a href="../../pointer.html#array">pointer</a>.<a href="../array.html#string">array</a>.<span class="reservedKey">string</span></h1>
     <div id="_t"></div>
+    <div id="c_str"></div>    
 </body>
 <script src="../../../Global.js"></script>
-<script>GlobalController.init();</script>
+<script src="../../../Tent.js"></script>
+<script>
+    TentController.createTent("c_str", 3);
+    document.getElementById("c_str[0]").innerHTML = `<a href="../../../404.html?missing=const" class="reservedKey">const</a> <a href="../../dataType/integer.html#char" class="reservedKey">char</a><a href="../../pointer.html">*</a>`;
+    GlobalController.init();
+</script>
 </html>
