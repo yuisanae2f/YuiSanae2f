@@ -15,8 +15,9 @@
 <script src="../../../Global.js"></script>
 <script src="../../../Tent.js"></script>
 <script>
-    TentController.createTent("c_str", 3);
-    document.getElementById("c_str[0]").innerHTML = `<a href="../../../404.html?missing=const" class="reservedKey">const</a> <a href="../../dataType/integer.html#char" class="reservedKey">char</a><a href="../../pointer.html">*</a>`;
+    if(TentController.createTent("c_str", 3)) {
+        document.getElementById("c_str[0]").innerHTML = `<h2><a href="../../../404.html?missing=const" class="reservedKey">const</a> <a href="../../dataType/integer.html#char" class="reservedKey">char</a><a href="../../pointer.html">*</a></h2>`;
+    }
     GlobalController.init();
 </script>
 </html>
