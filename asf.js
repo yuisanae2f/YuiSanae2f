@@ -54,7 +54,7 @@ GlobalController = {
             url = pro0.split('?')[0] + prmString + (arr[1] === undefined ? '' : '#' + arr[1]);
             aEl[i].href = url;
         }
-    
+     
         for (let i = 0; i < srcEl.length; i++) {
             const currentURL = srcEl[i].src;
             const arr = currentURL.split('#');
