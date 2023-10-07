@@ -10,6 +10,8 @@
 <body>
     <h1></h1>
     <div id="_t"></div>
+
+    <div id="_id"></div>
     <div id="missing"></div>
 
     <h2 id="redirect"></h2>
@@ -27,6 +29,9 @@
 </body>
 <script>
     const err404 = GlobalController.getURLParams()[0].value;
+    let _id = '#' + (window.location.href.toString().split('#')[1] ?? "");
+    _id = "#" == _id ? "" : _id;
+    if(_id !== "") document.getElementById("_id").innerHTML = `<h2 class="generic">${_id}</h2>`;
 </script>
 <script src="./404.js"></script>
 <script src="./Tent.js"></script>

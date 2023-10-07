@@ -53,5 +53,5 @@ strArr = [
 
 function re404(name, root, url) {
     document.getElementById(`redirect[${name}]`).innerHTML = 
-    `${name}: <a href="${root}/${url}" class="generic">${root}/${url}</a>`;
+    `${name}: <a href="${root}/${url}${_id}" class="generic">${root}/${url}${_id}</a>`;
 }
