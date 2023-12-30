@@ -1,0 +1,31 @@
+/*
+@keyframes ld {
+    from {
+        background-color: rgb(45, 45, 45);
+        color: azure;
+    }
+
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+*/
+
+body {
+    /*
+    animation: ld 500ms ease-in;
+    animation-fill-mode: both;
+    */
+    background-color: white;
+    color: black;
+}
+
+a {
+    /*
+    animation: ld 500ms ease-in;
+    animation-fill-mode: both;
+    */
+    background-color: white;
+    color: black;
+}
