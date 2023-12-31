@@ -1,0 +1,1 @@
+include('Component/box.js');

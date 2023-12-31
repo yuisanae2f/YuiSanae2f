@@ -2,13 +2,13 @@ function include(path, wh = document.head) {
     switch(path.split('.')[1]) {
         case 'js':
             scr = document.createElement("script");
-            scr.src = path;
+            scr.src = document.currentScript.dir + path;
             break;
         case 'css':
             scr = document.createElement('link');
             scr.rel = 'stylesheet';
             scr.type = 'text/css';
-            scr.href= path;
+            scr.href= document.currentScript.dir + path;
             break;
     }
 
@@ -28,7 +28,7 @@ function preMain() {
 
     switch (argv.length) {
         case 0: case 1: case 2:
-            text = `${navigator.language || navigator.userLanguage} 2 index`;
+            text = `${navigator.language || navigator.userLanguage} 1 index`;
         default:
             argv = text.split(' ');
             globalPrm = [argv[0], argv[1]];
@@ -56,21 +56,25 @@ include('global.js');
 include('style.js');
 include('docs.js');
 include('locale.js')
+include('Component.js');
 
 function main() {
     let c = document.getElementById('args');
     c.value = argt();
+    document.body.style.margin = "30px";
     locale();
     style();
     let board = new tent("board", "div", document.body);
     docs[args()[2]]();
+
     return 0;
 }
 
 function getURL(arg) {
-    return `${window.location.href.split('?')[0]}?${btoa(arg)}`;
+    return `${window.location.href.split('?')[0]}?${btoa(`${globalPrm[0]} ${globalPrm[1]} ${arg}`)}`;
 }
 
 function run() {
-    window.open(window.location.href.split('?')[0] + '?' + btoa(document.getElementById('args').value));
+    const t = document.getElementById('args').value;
+    window.open(window.location.origin + `/${t.split(' ')[1] == '0' ? 'dark' : 'index'}.html` + '?' + btoa(t));
 }

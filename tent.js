@@ -1,6 +1,6 @@
 class tent {
     constructor(id, type, where) {
-        this.id = `${where.id ?? ''}${id}`;
+        this.id =  where.id == '' ? id : `${where.id ?? ''} ${id}`;
         this.root = where;
 
         let pos = document.createElement(type);

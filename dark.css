@@ -1,31 +1,25 @@
-/* 
 @keyframes ld {
     to {
-        background-color: rgb(45, 45, 45);
-        color: azure;
+        opacity: 100;
     }
 
     from {
-        background-color: white;
-        color: black;
+        opacity: 0;
     }
 }
-*/
 
 body {
-    /*
-    animation: ld 500ms ease-in;
-    animation-fill-mode: both;
-    */
     background-color: rgb(45, 45, 45);
     color: azure;
 }
 
-a {
-    /*
-    animation: ld 500ms ease-in;
+body * {
+    animation: ld 500ms;
     animation-fill-mode: both;
-    */
     background-color: rgb(45, 45, 45);
+    color: azure;
+}
+
+a { 
     color: azure;
 }
