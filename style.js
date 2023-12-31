@@ -9,7 +9,7 @@ function style() {
 
             let aa = args();
             aa[1] = '1';
-            dark_a.pos().href = window.location.origin + '/index.html' + '?' + btoa(argt(aa));
+            dark_a.pos().href = './index.html' + '?' + btoa(argt(aa));
             dark_a.append(d[argv[0]]);
             break;
         case "1":
@@ -19,7 +19,7 @@ function style() {
 
             let ab = args();
             ab[1] = '0';
-            light_a.pos().href = window.location.origin + '/dark.html' + '?' + btoa(argt(ab));
+            light_a.pos().href = './dark.html' + '?' + btoa(argt(ab));
             light_a.append(l[argv[0]]);
             break;
         default:
