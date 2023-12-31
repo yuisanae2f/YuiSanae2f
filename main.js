@@ -71,10 +71,10 @@ function main() {
 }
 
 function getURL(arg) {
-    return `${window.location.href.split('?')[0]}?${btoa(`${globalPrm[0]} ${globalPrm[1]} ${arg}`)}`;
+    return `./?${btoa(`${globalPrm[0]} ${globalPrm[1]} ${arg}`)}`;
 }
 
 function run() {
     const t = document.getElementById('args').value;
-    window.open(window.location.origin + `/${t.split(' ')[1] == '0' ? 'dark' : 'index'}.html` + '?' + btoa(t));
+    window.open(`./${t.split(' ')[1] == '0' ? 'dark' : 'index'}.html` + '?' + btoa(t));
 }
