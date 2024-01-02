@@ -25,7 +25,6 @@ include('locale.js')
 function main() {
     let c = document.getElementById('args');
     c.value = argt();
-    document.body.style.margin = "30px";
     locale('TRANSLATED_NOT');
     style('TRANSLATED_NOT');
     let board = new tent("board", "div", document.body);

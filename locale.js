@@ -1,8 +1,10 @@
-function locale() {
+include("./Component/tab.js");
+
+function locale(nil = "") {
     let aa = args();
     let l = new tent("locale", "div", document.body);
     let lh = l.tent("title", "h1");
-    lh.set({ko: "언어", en: "Languages"}[aa[0]]);
+    lh.set({ko: "언어", en: "Languages"}[aa[0]] ?? nil);
 
     if(args()[0] != 'ko') {
         aa[0] = 'ko';

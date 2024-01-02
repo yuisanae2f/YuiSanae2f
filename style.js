@@ -24,7 +24,7 @@ function style(nil = "") {
             break;
     }
 
-    t = {en: "Vision", ko: "비전"};
+    t = {en: "Theme", ko: "테마"};
 
     title.append(t[argv[0]] ?? nil);
 }
